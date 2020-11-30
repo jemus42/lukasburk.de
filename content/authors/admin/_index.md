@@ -23,11 +23,11 @@ bio: Something something R
 interests:
 - R
 - Stats
-- Nerd shit
+- Nerd stuff
 
 education:
   courses:
-  - course: BSc in Public Health
+  - course: BA in Public Health
     institution: University of Bremen
     year: 2018
 
@@ -59,9 +59,9 @@ email: "lukas@quantenbrot.de"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+# user_groups:
+# - Researchers
+# - Visitors
 ---
 
 Lukas Burk is a person who does stuff.
