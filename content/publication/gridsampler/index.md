@@ -3,7 +3,7 @@
 
 title: "Gridsampler"
 authors: ["Mark Heckmann", "Lukas Burk"]
-date: 2020-12-04T13:04:42+01:00
+date: 2017-01-10
 doi: "10.5281/zenodo.168561"
 
 # Schedule page publish date (NOT publication's date).
@@ -40,7 +40,7 @@ url_pdf: https://openresearchsoftware.metajnl.com/article/10.5334/jors.150/
 url_code: https://github.com/markheckmann/gridsampler
 url_dataset:
 url_poster:
-url_project:
+url_project: http://gridsampler.openrepgrid.org/
 url_slides:
 url_source:
 url_video:
