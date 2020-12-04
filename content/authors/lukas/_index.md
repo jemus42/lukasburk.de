@@ -4,26 +4,28 @@ name: Lukas Burk
 
 # Username (this should match the folder name)
 authors:
-- admin
+- lukas
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Master's student
+role: Master's student in Medical Biometry / Biostatistics
 
 # Organizations/Affiliations
 organizations:
 - name: University of Bremen
-  url: ""
+  url: "https://uni-bremen.de"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Something something R
+bio: Doing things with R for fun and empiricism
 
 interests:
 - R
-- Stats
-- Nerd stuff
+- Package development
+- Deep Learning
+- Statistical modeling
+- Computing infrastructure
 
 education:
   courses:
