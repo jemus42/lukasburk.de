@@ -16,6 +16,8 @@ role: Master's student in Medical Biometry / Biostatistics
 organizations:
 - name: University of Bremen
   url: "https://uni-bremen.de"
+# - name: Leibniz Institute for Prevention Research and Epidemiology - BIPS
+#   url: "https://www.bips-institut.de/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Doing things with R for fun and empiricism
