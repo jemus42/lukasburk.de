@@ -67,3 +67,6 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+I wrote the shiny GUI for the `{gridsampler}` simulation tool written by Dr. Mark Heckmann. 
+I should note that I have no expertise regarding the relevant psychemtric methods.

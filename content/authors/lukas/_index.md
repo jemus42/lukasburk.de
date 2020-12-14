@@ -31,7 +31,10 @@ interests:
 
 education:
   courses:
-  - course: BA in Public Health
+  - course: B. Sc. in Medical Biometry / Biostatistics
+    institution: University of Bremen
+    year: 2020
+  - course: B. A. in Public Health
     institution: University of Bremen
     year: 2018
 
@@ -68,4 +71,5 @@ email: "lukas@quantenbrot.de"
 # - Visitors
 ---
 
-Lukas Burk is a person who does stuff.
+I'm not sure whether I am a statistician, biometrician, or data scientist.  
+For what it's worth, I enjoy working in R and the application of statistical methods, data management, visualization, and related topics.
