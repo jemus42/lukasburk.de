@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Master's student in Medical Biometry / Biostatistics
+role: PhD candidate in statistics and machine learning
 
 # Organizations/Affiliations
 organizations:
