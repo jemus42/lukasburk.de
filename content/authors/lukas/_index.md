@@ -16,8 +16,10 @@ role: Master's student in Medical Biometry / Biostatistics
 organizations:
 - name: University of Bremen
   url: "https://uni-bremen.de"
-# - name: Leibniz Institute for Prevention Research and Epidemiology - BIPS
-#   url: "https://www.bips-institut.de/"
+- name: "Leibniz Institute for Prevention Research and Epidemiology"
+  url: "https://www.bips-institut.de/das-institut/abteilungen/biometrie-und-edv/emmy-noether-nachwuchsgruppe-beyond-prediction-statistical-inference-with-machine-learning.html"
+- name: "LMU München"
+  url: "https://www.slds.stat.uni-muenchen.de/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Doing things with R for fun and empiricism
@@ -25,16 +27,17 @@ bio: Doing things with R for fun and empiricism
 interests:
 - R
 - Package development
+- Data visualization
 - Deep Learning
 - Statistical modeling
 - Computing infrastructure
 
 education:
   courses:
-  - course: (WIP) M. Sc. in Medical Biometry / Biostatistics
+  - course: M.Sc. in Medical Biometry / Biostatistics
     institution: University of Bremen
     year: 2020
-  - course: B. A. in Public Health
+  - course: B.A. in Public Health
     institution: University of Bremen
     year: 2018
 
@@ -43,9 +46,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+# - icon: envelope
+#   icon_pack: fas
+#   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/jemus42
@@ -72,4 +75,5 @@ email: "lukas@quantenbrot.de"
 ---
 
 I'm not sure whether I am a statistician, biometrician, or data scientist.  
-For what it's worth, I enjoy working in R and the application of statistical methods, data management, visualization, and related topics.
+For what it's worth, I enjoy working in R and the application of statistical methods, data management, visualization, and related topics.  
+I'm sure I'll think of a better summary at some point.
