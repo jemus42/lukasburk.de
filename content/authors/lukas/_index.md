@@ -74,6 +74,5 @@ email: "lukas@quantenbrot.de"
 # - Visitors
 ---
 
-I'm not sure whether I am a statistician, biometrician, or data scientist.  
 For what it's worth, I enjoy working in R and the application of statistical methods, data management, visualization, and related topics.  
 I'm sure I'll think of a better summary at some point.
