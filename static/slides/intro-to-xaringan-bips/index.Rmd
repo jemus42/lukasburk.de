@@ -164,8 +164,6 @@ class: middle
 
 ## Quick comparison:
 
-A paragraph of text
-
 .pull-left[
 ### $\LaTeX$/`beamer`
 
