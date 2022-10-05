@@ -5,13 +5,13 @@ output: hugodown::md_document
 title: "Hello there!"
 subtitle: "Yet another “Yet another website” website introduction post."
 summary: ""
-authors: []
+authors: ["lukas"]
 tags: []
 categories: []
 date: 2020-11-30
 lastmod: 2020-11-30
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -27,9 +27,9 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-rmd_hash: a793f2032c547004
+rmd_hash: 5cddd727e57b8338
 
 ---
 
-
+It's that time of the year again. Time to start something new. Something else.
 

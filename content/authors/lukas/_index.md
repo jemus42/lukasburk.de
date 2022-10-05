@@ -18,18 +18,18 @@ organizations:
   url: "https://uni-bremen.de"
 - name: "Leibniz Institute for Prevention Research and Epidemiology"
   url: "https://www.bips-institut.de/das-institut/abteilungen/biometrie-und-edv/emmy-noether-nachwuchsgruppe-beyond-prediction-statistical-inference-with-machine-learning.html"
-- name: "LMU München"
+- name: "Chair of Statistical Learning and Data Science, LMU, Munich"
   url: "https://www.slds.stat.uni-muenchen.de/"
+- name: "Munich Center for Machine Learning (MCML), LMU, Munich"
+  url: "https://mcml.ai"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Doing things with R for fun and empiricism
 
 interests:
-- R
-- Package development
+- R & package development
 - Data visualization
-- Deep Learning
-- Statistical modeling
+- Reproducible research
 - Computing infrastructure
 
 education:
@@ -52,9 +52,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/jemus42
-# - icon: google-scholar
-#   icon_pack: ai
-#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=zcITcLUAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/jemus42
@@ -74,5 +74,4 @@ email: "lukas@quantenbrot.de"
 # - Visitors
 ---
 
-For what it's worth, I enjoy working in R and the application of statistical methods, data management, visualization, and related topics.  
-I'm sure I'll think of a better summary at some point.
+I'm sure I'll think of a succinct summary at some point.
