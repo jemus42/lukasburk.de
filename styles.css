@@ -1,1 +1,10 @@
 /* css styles */
+#heading > .about-links {
+  justify-content: center;
+}
+
+#heading > div > p > a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: larger;
+}
