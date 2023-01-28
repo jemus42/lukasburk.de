@@ -1,7 +1,35 @@
 ---
-title: "lukasburk.de"
+title: "Lukas Burk"
+about:
+  id: heading
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: mastodon
+      text: Mastodon
+      href: https://norden.social/@jemsu
+    - icon: github
+      text: GitHub
+      href: https://github.com/jemus42
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+:::{#heading}
+
+Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the *Leibniz Institute for Prevention Research and Epidemiology - BIPS* in Bremen and the
+*Chair of Statistical Learning and Datascience (SLDS)* of LMU Munich.
+
+Topics include survival analysis, tree-based methods, and high-dimensional data.
+
+
+## Education
+
+- University of Bremen  
+M. Sc. in Medical Biometry / Biostatistics | Sept 2018 - Feb 2021
+
+- University of Bremen  
+B. A. in Public Health | Sep 2014 - Sep 2018
+
+:::
+
+

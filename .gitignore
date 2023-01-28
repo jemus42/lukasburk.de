@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-resources
-public
 
 /.quarto/
+/_site/
