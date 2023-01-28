@@ -1,5 +1,10 @@
 project:
   type: website
+  render:
+    - index.qmd
+  resources:
+    - cv.html
+    - cv_files
 
 website:
   title: "Lukas Burk"
@@ -13,6 +18,8 @@ website:
     left:
       - href: index.qmd
         text: About
+      - href: cv.html
+        text: CV
   page-footer:
     left: "CC-BY 2023, Lukas Burk"
     center:
@@ -22,6 +29,9 @@ website:
       - icon: github
         aria-label: GitHub
         href: https://github.com/jemus42
+      - icon: envelope
+        aria-label: E-Mail
+        href: "mailto:hi@lukasburk.de"
 
 format:
   html:

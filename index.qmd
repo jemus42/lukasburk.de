@@ -2,9 +2,13 @@
 title: "Lukas Burk"
 about:
   id: heading
-  template: jolla
+  template: solana
   image: profile.jpg
+  image-shape: round
   links:
+    - icon: envelope
+      text: Mail
+      href: "mailto:hi@lukasburk.de"
     - icon: mastodon
       text: Mastodon
       href: https://norden.social/@jemsu
@@ -16,8 +20,8 @@ about:
 
 :::{#heading}
 
-Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the *Leibniz Institute for Prevention Research and Epidemiology - BIPS* in Bremen and the
-*Chair of Statistical Learning and Datascience (SLDS)* of LMU Munich.
+Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*][BIPS] in Bremen and the
+[*Chair of Statistical Learning and Data Science (SLDS)*][SLDS] of LMU Munich.
 
 Topics include survival analysis, tree-based methods, and high-dimensional data.
 
@@ -33,3 +37,6 @@ B. A. in Public Health | Sep 2014 - Sep 2018
 :::
 
 
+[BIPS]: https://www.bips-institut.de
+[SLDS]: https://www.slds.stat.uni-muenchen.de
+[MCML]: https://mcml.ai/

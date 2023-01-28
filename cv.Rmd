@@ -1,0 +1,146 @@
+---
+title: "CV"
+author: Lukas Burk
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ["resume"]
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+---
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-github"></i> [github.com/jemus42](https://github.com/jemus42)
+- <i class="fa fa-twitter"></i> [twitter.com/jemus42](https://twitter.com/jemus42)
+- <i class="fa fa-link"></i> [lukasburk.de](https://lukasburk.de)
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Statistical programming, analysis, and modeling
+
+- R: Analysis, data management, package development and visualization
+
+- Reproducible reporting and interactive app development (shiny, RMarkdown)
+
+- Version control (git, GitHub) and CI/CD (Travis CI, GitHub Actions)
+
+- Basics in SAS, SQL
+
+Languages {#langs}
+--------------------------------------------------------------------------------
+
+German (Native)
+
+English (Fluent)
+
+
+Main
+================================================================================
+
+`r rmarkdown::metadata$author` {#title}
+--------------------------------------------------------------------------------
+
+<!-- Optional descriptive content -->
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### M. Sc. in Medical Biometry / Biostatistics
+
+University of Bremen
+
+Bremen, Germany
+
+2021
+
+Thesis: *A Comparison of Deep Learning Models for Energy Expenditure Prediction in Preschoolers*
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
+
+### B. A. in Public Health
+
+University of Bremen
+
+Bremen, Germany
+
+2018
+
+Thesis: *Detection of Concomitant Use of Medications in GePaRD*
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
+
+Work {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Internship: Biometry
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
+
+Bremen, Germany
+
+2019
+
+- Creation of a handout on the topic of count data and modeling approaches
+- Descriptive tables for validation purposes in the context of an ongoing study
+
+### Student assistant
+
+Competence Center for Clinical Trials (KKSB)
+
+Bremen, Germany
+
+2019
+
+- Support during the analysis of study data
+- Descriptive tables 
+- Exploratory linear regression modeling
+
+### Internship: Biometry, Epidemiology
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
+
+Bremen, Germany
+
+2016 - 2017
+
+- Creation of an R / Shiny application for interactive data validation
+- Data management and descriptive statistics
+
+
+Teaching {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### Tutor for quantitative methods
+
+University of Bremen
+
+Bremen, Germany
+
+- Tutorials for first and second semester undergraduates in psychology
+- Basics of descriptive and inferential statistics
+- Application of these contents using R & RStudio
+- Yearly course "Introduction to R"
+
+
+2014 - 2018
+
+Publications {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Gridsampler: A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies
+
+Implementation of the user interface in Shiny
+
+Bremen, Germany
+
+2016
+
+Heckmann, M. and **Burk, L.**, 2017. Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies. Journal of Open Research Software, 5(1), p.2. DOI: http://doi.org/10.5334/jors.150
