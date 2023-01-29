@@ -36,10 +36,12 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      light: [flatly, style.scss]
+      dark: [darkly, style.scss]
     toc: true
+    email-obfuscation: references
+    smooth-scroll: true
+    #license: CC BY
 
 execute:
   freeze: auto

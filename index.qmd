@@ -49,3 +49,4 @@ B. A. in Public Health | Sep 2014 - Sep 2018
 [MCML]: https://mcml.ai/
 [gscolar]: https://scholar.google.com/citations?user=zcITcLUAAAAJ
 [orcid]: https://orcid.org/0000-0001-7528-3795
+[gh]: https://github.com/jemus42
