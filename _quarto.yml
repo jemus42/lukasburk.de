@@ -1,0 +1,45 @@
+project:
+  type: website
+  render:
+    - index.qmd
+  resources:
+    - cv.html
+    - cv_files
+
+website:
+  title: "Lukas Burk"
+  site-url: https://lukasburk.de
+  favicon: profile.jpg
+  twitter-card: true
+  open-graph:
+    locale: en_US
+    site-name: Lukas Burk
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: cv.html
+        text: CV
+  page-footer:
+    left: "CC-BY 2023, Lukas Burk"
+    center:
+      - icon: mastodon
+        aria-label: Mastodon
+        href: https://norden.social/@jemsu
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/jemus42
+      - icon: envelope
+        aria-label: E-Mail
+        href: "mailto:hi@lukasburk.de"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto

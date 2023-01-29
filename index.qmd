@@ -1,0 +1,51 @@
+---
+title: "Lukas Burk"
+# author:
+#   name: Lukas Burk
+#   orcid: 0000-0001-7528-3795
+about:
+  id: heading
+  template: solana
+  image: profile.jpg
+  image-shape: round
+  # links:
+  #   - icon: mastodon
+  #     text: Mastodon
+  #     href: https://norden.social/@jemsu
+  #   - icon: github
+  #     text: GitHub
+  #     href: https://github.com/jemus42
+  #   - icon: envelope
+  #     text: Mail
+  #     href: "mailto:hi@lukasburk.de"
+---
+
+:::{#heading}
+
+Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*][BIPS] in Bremen and the
+[*Chair of Statistical Learning and Data Science (SLDS)*][SLDS] of LMU Munich in association with the [*Munich Center for Machine Learning*][MCML].
+
+::: {.about-links}
+[{{< ai orcid >}}][orcid]
+[{{< ai google-scholar >}}][gscolar]
+:::
+
+Topics include survival analysis, tree-based methods, and high-dimensional data.
+
+
+## Education
+
+- University of Bremen  
+M. Sc. in Medical Biometry / Biostatistics | Sept 2018 - Feb 2021
+
+- University of Bremen  
+B. A. in Public Health | Sep 2014 - Sep 2018
+
+:::
+
+
+[BIPS]: https://www.bips-institut.de
+[SLDS]: https://www.slds.stat.uni-muenchen.de
+[MCML]: https://mcml.ai/
+[gscolar]: https://scholar.google.com/citations?user=zcITcLUAAAAJ
+[orcid]: https://orcid.org/0000-0001-7528-3795
