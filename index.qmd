@@ -22,13 +22,13 @@ about:
 
 :::{#heading}
 
+Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*][BIPS] in Bremen and the
+[*Chair of Statistical Learning and Data Science (SLDS)*][SLDS] of LMU Munich in association with the [*Munich Center for Machine Learning*][MCML].
+
 ::: {.about-links}
 [{{< ai orcid >}}][orcid]
 [{{< ai google-scholar >}}][gscolar]
 :::
-
-Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*][BIPS] in Bremen and the
-[*Chair of Statistical Learning and Data Science (SLDS)*][SLDS] of LMU Munich in association with the [*Munich Center for Machine Learning*][MCML].
 
 Topics include survival analysis, tree-based methods, and high-dimensional data.
 
