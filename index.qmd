@@ -26,8 +26,9 @@ Pursuing a PhD in statistics and machine learning since April 2021 in a position
 [*Chair of Statistical Learning and Data Science (SLDS)*][SLDS] of LMU Munich in association with the [*Munich Center for Machine Learning*][MCML].
 
 ::: {.about-links}
-[{{< ai orcid >}}][orcid]
-[{{< ai google-scholar >}}][gscolar]
+[{{< ai orcid size=2x >}}][orcid]
+[{{< ai google-scholar size=2x >}}][gscolar]
+[{{< bi github size=2em >}}][gh]
 :::
 
 Topics include survival analysis, tree-based methods, and high-dimensional data.

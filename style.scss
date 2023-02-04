@@ -2,7 +2,7 @@
 // Base document colors
 //$body-bg: #181818;
 //$body-color: white;
-$link-color: lighten(#303D4E, 10%);
+//$link-color: lighten(#303D4E, 10%);
 
 // Code blocks
 $code-block-bg-alpha: -.8;
@@ -15,5 +15,5 @@ $code-block-bg-alpha: -.8;
 #heading > div > p > a {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 36px;
+  //font-size: 36px;
 }
