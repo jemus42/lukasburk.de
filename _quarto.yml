@@ -41,6 +41,7 @@ format:
     toc: true
     email-obfuscation: references
     smooth-scroll: true
+    link-external-newwindow: true
     #license: CC BY
 
 execute:
