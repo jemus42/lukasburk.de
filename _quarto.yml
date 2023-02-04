@@ -36,8 +36,8 @@ website:
 format:
   html:
     theme:
-      light: [flatly, style.scss]
-      dark: [darkly, style.scss]
+      light: [flatly, style-light.scss, style-common.scss]
+      dark: [darkly, style-dark.scss, style-common.scss]
     toc: true
     email-obfuscation: references
     smooth-scroll: true

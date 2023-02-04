@@ -29,7 +29,7 @@ Skills {#skills}
 
 - Machine learning and benchmarking in R
 
-- Experience with HPC systems (TORQUE/PBS, SLURM)
+- Experience with HPC systems (TORQUE/PBS, Slurm)
 
 - Reproducible reporting and interactive app development (shiny, RMarkdown, quarto)
 
