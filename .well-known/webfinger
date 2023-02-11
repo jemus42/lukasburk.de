@@ -1,0 +1,23 @@
+{
+  "subject": "acct:jemsu@norden.social",
+  "aliases": [
+    "https://norden.social/@jemsu",
+    "https://norden.social/users/jemsu"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://norden.social/@jemsu"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://norden.social/users/jemsu"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://norden.social/authorize_interaction?uri={uri}"
+    }
+  ]
+}

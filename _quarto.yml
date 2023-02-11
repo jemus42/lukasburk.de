@@ -5,6 +5,7 @@ project:
   resources:
     - cv.html
     - cv_files
+    - .well-known
 
 website:
   title: "Lukas Burk"
