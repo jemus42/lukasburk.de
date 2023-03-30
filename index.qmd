@@ -18,6 +18,8 @@ about:
   #   - icon: envelope
   #     text: Mail
   #     href: "mailto:hi@lukasburk.de"
+editor_options: 
+  chunk_output_type: console
 ---
 
 :::{#heading}

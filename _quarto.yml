@@ -3,6 +3,7 @@ project:
   render:
     - index.qmd
   resources:
+    - umami.html
     - cv.html
     - cv_files
     - .well-known
@@ -43,6 +44,8 @@ format:
     email-obfuscation: references
     smooth-scroll: true
     link-external-newwindow: true
+    include-in-header:
+      - umami.html
     #license: CC BY
 
 execute:
