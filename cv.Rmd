@@ -27,13 +27,13 @@ Skills {#skills}
 
 - R: Data analysis, management, and visualization, package development
 
-- Machine learning and benchmarking in R
+- Machine learning and benchmarking in R (mlr3, batchtools)
 
 - Experience with HPC systems (TORQUE/PBS, Slurm)
 
 - Reproducible reporting and interactive app development (shiny, RMarkdown, quarto)
 
-- Version control (git, GitHub) and CI/CD (Travis CI, GitHub Actions)
+- Version control (git, GitHub) and CI/CD (GitHub Actions)
 
 - Basics in SAS, SQL
 
@@ -90,7 +90,6 @@ Leibniz Institute for Prevention Research and Epidemiology - BIPS / Chair of Sta
 Bremen and Munich, Germany
 
 Since 2021
-
 
 ### Internship: Biometry
 
