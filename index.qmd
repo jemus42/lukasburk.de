@@ -1,23 +1,10 @@
 ---
 title: "Lukas Burk"
-# author:
-#   name: Lukas Burk
-#   orcid: 0000-0001-7528-3795
 about:
   id: heading
   template: solana
   image: profile.jpg
   image-shape: round
-  # links:
-  #   - icon: mastodon
-  #     text: Mastodon
-  #     href: https://norden.social/@jemsu
-  #   - icon: github
-  #     text: GitHub
-  #     href: https://github.com/jemus42
-  #   - icon: envelope
-  #     text: Mail
-  #     href: "mailto:hi@lukasburk.de"
 editor_options: 
   chunk_output_type: console
 ---
