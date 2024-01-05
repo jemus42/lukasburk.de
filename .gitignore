@@ -6,5 +6,8 @@
 /.quarto/
 /_site/
 
+_freeze
+cv.pdf
+
 # Local Netlify folder
 .netlify
