@@ -1,7 +1,10 @@
 project:
   type: website
   render:
+    # Need to exlude cv.Rmd from quarto rendering
     - index.qmd
+    - listing.qmd
+    - posts/*
   resources:
     - umami.html
     - cv.html
@@ -17,17 +20,12 @@ website:
     locale: en_US
     site-name: Lukas Burk
   navbar:
-    left:
-      - href: index.qmd
-        text: About
+    right:
       - href: cv.html
         text: CV
   page-footer:
-    left: "CC-BY 2023, Lukas Burk"
+    left: "CC-BY 2024, Lukas Burk"
     center:
-      - icon: mastodon
-        aria-label: Mastodon
-        href: https://norden.social/@jemsu
       - icon: github
         aria-label: GitHub
         href: https://github.com/jemus42
@@ -46,6 +44,7 @@ format:
     link-external-newwindow: true
     include-in-header:
       - umami.html
+    # Don't like how this is rendered by default, adding license manually in footer
     #license: CC BY
 
 execute:
