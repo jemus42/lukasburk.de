@@ -13,13 +13,17 @@ project:
 
 website:
   title: "Lukas Burk"
+  # site-url and description needed for RSS feed
   site-url: https://lukasburk.de
+  description: "lukasburk.de - A perfectly cromulent website."
   favicon: profile.jpg
   twitter-card: true
   open-graph:
     locale: en_US
     site-name: Lukas Burk
   navbar:
+    left:
+      - href: listing.qmd
     right:
       - href: cv.html
         text: CV
@@ -42,6 +46,13 @@ format:
     email-obfuscation: references
     smooth-scroll: true
     link-external-newwindow: true
+    # https://quarto.org/docs/output-formats/html-code.html
+    code-tools: true
+    code-copy: hover
+    code-link: true
+    highlight-style: github
+    # https://quarto.org/docs/output-formats/html-lightbox-figures.html
+    lightbox: true
     include-in-header:
       - umami.html
     # Don't like how this is rendered by default, adding license manually in footer
