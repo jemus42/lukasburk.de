@@ -73,8 +73,10 @@ saveRDS(bike, "bike.rds")
 ## Tuning with `mlr3`
 
 I wrapped the RPF learner into an `mlr3` learner for `mlr3extralearners`, which makes it very convenient to tune.
-If you're unfamiliar with the `mlr3` ecosystem, well guess who contributed to the now-published mlr3 book [available for free online](https://mlr3book.mlr-org.com/) or buy from your [friendly neighborhood dystopian online retailer in fancy tree corpse form](https://www.amazon.com/dp/1032507543).  
-No judgement.
+If you're unfamiliar with the `mlr3` ecosystem, well guess who contributed to the now-published mlr3 book [available for free online](https://mlr3book.mlr-org.com/), which you can also buy from your [friendly neighborhood dystopian online retailer in fancy tree corpse form](https://www.amazon.com/dp/1032507543).  
+No judgement.  
+Mostly.  
+It's fine.
 
 Anyway, here's the code I used, which is fairly standard "wrap learner in `AutoTuner` and tune the thing with 3-fold cross-validation and a somewhat arbitrary tuning budget using MBO I guess because why not" (WLATT3FCVSATBUMBOIGBWN, as my grampa used to call it).
 
@@ -86,10 +88,7 @@ library(mlr3extralearners)
 bike <- readRDS("bike.rds")
 biketask <- as_task_regr(bike, target = "bikers")
 splits <- partition(biketask)
-```
 
-
-```{r tune-setup, eval=FALSE}
 tuned_rpf <- auto_tuner(
   learner = lrn("regr.rpf", ntrees = 200, max_interaction = 4, nthreads = 2),
   tuner = tnr("mbo"),
@@ -104,10 +103,7 @@ tuned_rpf <- auto_tuner(
   store_tuning_instance = TRUE, 
   store_benchmark_result = TRUE
 )
-```
 
-
-```{r tune-rpf, eval=FALSE}
 tuned_rpf$train(biketask, row_ids = splits$train)
 ```
 
