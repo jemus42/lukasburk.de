@@ -55,9 +55,10 @@ format:
     lightbox: true
     html-math-method: katex
     footnotes-hover: true
-    csl: nature.csl
-    resource-path:
-      - "/Users/Lukas/.local/csl"
+    # Not sure how to specifcy a CSL file for it to work on netlify
+    # csl: nature.csl
+    # resource-path:
+    #   - "/Users/Lukas/.local/csl"
     include-in-header:
       - umami.html
     # Don't like how this is rendered by default, adding license manually in footer
