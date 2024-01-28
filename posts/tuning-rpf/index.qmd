@@ -34,10 +34,10 @@ Partially because there's a benefit to the familiarity and partially because, we
 For IML, the `Bikeshare` data is one of those popular datasets.
 We're using it for a showcase article of the [`glex`][glexgithub] R package, and this post is decidedly not about that --- but feel free to [read the paper][glexpaper].
 
-What this post is actually about is [Random Planted Forests][rpfarxiv] (RPF, [R package on GitHub][rpfgithub]).
+What this post is actually about is [Random Planted Forests][rpfarxiv] (rpf, [R package on GitHub][rpfgithub]).
 I wanted the usage example on the `Bikeshare` data to be interesting and useful, and since interpretability methods tend to only be as good as the models they're trying to explain, I first needed a decent model.
 
-So, that's what this post is about: Tuning RPF, and then using RPF to explain the tuning results.
+So, that's what this post is about: Tuning rpf, and then using rpf to explain the tuning results.
 
 ## The Data
 
@@ -72,7 +72,7 @@ saveRDS(bike, "bike.rds")
 
 ## Tuning with `mlr3`
 
-I wrapped the RPF learner into an `mlr3` learner for `mlr3extralearners`, which makes it very convenient to tune.
+I wrapped the rpf learner into an `mlr3` learner for `mlr3extralearners`, which makes it very convenient to tune.
 If you're unfamiliar with the `mlr3` ecosystem, well guess who contributed to the now-published mlr3 book [available for free online](https://mlr3book.mlr-org.com/), which you can also buy from your [friendly neighborhood dystopian online retailer in fancy tree corpse form](https://www.amazon.com/dp/1032507543).  
 No judgement.  
 Mostly.  
@@ -107,7 +107,7 @@ tuned_rpf <- auto_tuner(
 tuned_rpf$train(biketask, row_ids = splits$train)
 ```
 
-Ideally, we would evaluate the tuned RPF on the test dataset like this:
+Ideally, we would evaluate the tuned rpf on the test dataset like this:
 
 ```r
 pred <- tuned_rpf$predict(biketask, row_ids = splits$test)
@@ -121,7 +121,7 @@ Error:
 ! external pointer is not valid
 ```
 
-This is related to RPF using [Rcpp modules](https://cran.r-project.org/web/packages/Rcpp/vignettes/Rcpp-modules.pdf) under the hood, with the takeaway being that at the time of writing I don't know if there's a way to serialize and deserialize RPF models for situations like this.
+This is related to rpf using [Rcpp modules](https://cran.r-project.org/web/packages/Rcpp/vignettes/Rcpp-modules.pdf) under the hood, with the takeaway being that at the time of writing I don't know if there's a way to serialize and deserialize rpf models for situations like this.
 This is quite unfortunate, but for the time being we'll just have to assume that the tuning result is somewhat reasonable.
 I should have just tuned on the full datasets, but alas, I guess this will have to do now.
 
@@ -147,7 +147,7 @@ melt(archive, id.vars = "regr.rmse",
   facet_wrap(vars(variable), scales = "free_x") +
   geom_point() +
   labs(
-    title = "RPF / Bikeshare tuning archive",
+    title = "rpf / Bikeshare tuning archive",
     subtitle = "Scores on inner resampling folds",
     x = "Parameter Value", y = "RMSE"
   )
@@ -172,8 +172,8 @@ library(randomPlantedForest)
 library(glex)
 ```
 
-We then fit another RPF with heuristically picked parameters on the tuning archive, using the RMSE as target and tuning parameters as features.
-Why not tune RPF "properly" here, you ask?
+We then fit another rpf with heuristically picked parameters on the tuning archive, using the RMSE as target and tuning parameters as features.
+Why not tune rpf "properly" here, you ask?
 Because I can't decide whether I want to make this post a recursion joke or not.
 Also time is finite and I couldn't be bothered.
 
@@ -220,7 +220,7 @@ Turns out `splits` has by far the largest effect, then we see `t_try` and `max_i
 Okay?
 Sure, why not.
 I guess it's a good thing to see confirmation that, interactions of the 3rd or 4th degree are negligible, and the second-order interactions are not surprising.
-Also, it confirms that if there's just one parameter that should paid attention to, it's `splits`.
+Also, it confirms that if you only pay attention to one parameter, it should be `splits` --- which is also not particularly surprising, as this parameter controls how long the algorithm runs, meaning that larger values will inevitably lead to better performance than small ones.
 
 ### Main Effects
 
@@ -237,7 +237,7 @@ p4 <- autoplot(rpglex, "split_try")
 (p1 + p2) / (p3 + p4)
 ```
 
-So, in short: `splits` wants to be large, `t_try` wants to be close to 1, `max_interaction` most likely also wants to be large and `split_try` is pulling a ¯\\\_(ツ)_/¯ on us.  
+So, in short: `splits` wants to be large, `t_try` wants to be close to 1, `max_interaction` most likely also wants to be large up to some point, and `split_try` is pulling a ¯\\\_(ツ)_/¯ on us.  
 Fair enough.
 
 ### Interaction Effects
@@ -249,7 +249,7 @@ autoplot(rpglex, c("splits", "split_try"))
 autoplot(rpglex, c("splits", "t_try"))
 ```
 
-Finally, here's the final parameter configuration that "won", meaning these are the parameters I'll be using to fit an RPF to the `Bikeshare` data in a new version of the `glex` vignette:
+Finally, here's the final parameter configuration that "won", meaning these are the parameters I'll be using to fit an rpf to the `Bikeshare` data in a new version of the `glex` vignette:
 
 ```{r}
 tuned_rpf$tuning_result[, c("splits", "split_try", "t_try", "max_interaction")]
@@ -261,7 +261,7 @@ Is that how it works?
 Let's say it does.
 
 I'm not entirely sure how much I want to trust these results or want to make generalizations based off of them (I don't), but the underlying principle seems quite useful to me.
-RPF is still a fairly young method and gaining intuition for its parameters like this seems neat.
+rpf is still a fairly young method and gaining intuition for its parameters like this seems neat.
 
 ## Conclusion
 
@@ -270,7 +270,7 @@ The key takeaway for the `Bikeshare` tuning is that:
 - `splits` wants to be large.
 - `t_try` wants to be close to 1.
 - Setting `max_interaction` to 5 or greater is only going to make you wait for the result longer.
-- `split_try` is also a parameter that exists. Idunno maybejust wing it with that boi and be done with it.
+- `split_try` is also a parameter that exists. Idunno maybe just wing it with that boi and be done with it.
 
 Turns out it wasn't particularly eye-opening to take a look at parameter interactions, but oh well.
 Better to have decomposed and not needed it than to never decompose at all.
