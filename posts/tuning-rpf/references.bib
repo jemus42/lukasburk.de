@@ -1,0 +1,24 @@
+@misc{hiabu2023random,
+      title={Random Planted Forest: a directly interpretable tree ensemble},
+      author={Munir Hiabu and Enno Mammen and Joseph T. Meyer},
+      year={2023},
+      eprint={2012.14563},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@InProceedings{hiabu2023glex,
+  title =   {Unifying local and global model explanations by functional decomposition of low dimensional structures},
+  author =       {Hiabu, Munir and Meyer, Joseph T. and Wright, Marvin N.},
+  booktitle =   {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages =   {7040--7060},
+  year =   {2023},
+  editor =   {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume =   {206},
+  series =   {Proceedings of Machine Learning Research},
+  month =   {25--27 Apr},
+  publisher =    {PMLR},
+  pdf =   {https://proceedings.mlr.press/v206/hiabu23a/hiabu23a.pdf},
+  url =   {https://proceedings.mlr.press/v206/hiabu23a.html},
+  abstract =   {We consider a global representation of a regression or classification function by decomposing it into the sum of main and interaction components of arbitrary order. We propose a new identification constraint that allows for the extraction of interventional SHAP values and partial dependence plots, thereby unifying local and global explanations. With our proposed identification, a feature’s partial dependence plot corresponds to the main effect term plus the intercept. The interventional SHAP value of feature $k$ is a weighted sum of the main component and all interaction components that include $k$, with the weights given by the reciprocal of the component’s dimension. This brings a new perspective to local explanations such as SHAP values which were previously motivated by game theory only. We show that the decomposition can be used to reduce direct and indirect bias by removing all components that include a protected feature. Lastly, we motivate a new measure of feature importance. In principle, our proposed functional decomposition can be applied to any machine learning model, but exact calculation is only feasible for low-dimensional structures or ensembles of those. We provide an algorithm and efficient implementation for gradient-boosted trees (xgboost) and random planted forest. Conducted experiments suggest that our method provides meaningful explanations and reveals interactions of higher orders. The proposed methods are implemented in an R package, available at https://github.com/PlantedML/glex.}
+}

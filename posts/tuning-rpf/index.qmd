@@ -1,6 +1,7 @@
 ---
 title: "Tuning Random Planted Forests with the help of a Random Planted Forest"
 date: "2024-01-27"
+date-modified: last-modified
 abstract: |
   In which we use an untuned model to explain the tuning of a tuned model just to see how it goes.
 categories: 
@@ -12,6 +13,7 @@ tags:
   - functional decomposition
   - hpo
 image: "vi.png"
+bibliography: references.bib
 editor_options: 
   chunk_output_type: console
 ---
@@ -32,9 +34,9 @@ When we talk about machine learning interpretability methods, we tend to circle 
 Partially because there's a benefit to the familiarity and partially because, well, there's just a limited number of real-world datasets floating around out there which are both publicly accessible and exhibit some kind of interesting structure that justifies the investigation of, say, third-order interaction effects with some sort of intuitive interpretation.
 
 For IML, the `Bikeshare` data is one of those popular datasets.
-We're using it for a showcase article of the [`glex`][glexgithub] R package, and this post is decidedly not about that --- but feel free to [read the paper][glexpaper].
+We're using it for a showcase article of the [`glex`][glexgithub] R package, and this post is decidedly not about that --- but feel free to read the paper @hiabu2023glex.
 
-What this post is actually about is [Random Planted Forests][rpfarxiv] (rpf, [R package on GitHub][rpfgithub]).
+What this post is actually about is Random Planted Forests @hiabu2023random (rpf, [R package on GitHub][rpfgithub]).
 I wanted the usage example on the `Bikeshare` data to be interesting and useful, and since interpretability methods tend to only be as good as the models they're trying to explain, I first needed a decent model.
 
 So, that's what this post is about: Tuning rpf, and then using rpf to explain the tuning results.
@@ -245,7 +247,7 @@ Fair enough.
 We can also take a look at the two largest interaction effects, `splits:split_try` and `splits:t_try`, but to be quite honest I'm not sure what to make of these plots except for how they illustrate in which direction MBO has taken the tuning process (large values for `splits` and `t_try`).
 
 ```{r interaction-effects}
-autoplot(rpglex, c("splits", "split_try"))
+autoplot(rpglex, c("splits", "split_try")) + 
 autoplot(rpglex, c("splits", "t_try"))
 ```
 
@@ -276,7 +278,5 @@ Turns out it wasn't particularly eye-opening to take a look at parameter interac
 Better to have decomposed and not needed it than to never decompose at all.
 Or something.
 
-[rpfarxiv]: https://arxiv.org/abs/2012.14563
 [rpfgithub]: https://github.com/PlantedML/randomPlantedForest
-[glexpaper]: https://proceedings.mlr.press/v206/hiabu23a.html
 [glexgithub]: https://github.com/PlantedML/glex
