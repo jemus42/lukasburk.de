@@ -34,9 +34,9 @@ When we talk about machine learning interpretability methods, we tend to circle 
 Partially because there's a benefit to the familiarity and partially because, well, there's just a limited number of real-world datasets floating around out there which are both publicly accessible and exhibit some kind of interesting structure that justifies the investigation of, say, third-order interaction effects with some sort of intuitive interpretation.
 
 For IML, the `Bikeshare` data is one of those popular datasets.
-We're using it for a showcase article of the [`glex`][glexgithub] R package, and this post is decidedly not about that --- but feel free to read the paper @hiabu2023glex.
+We're using it for a showcase article of the [`glex`][glexgithub] R package, and this post is decidedly not about that --- but feel free to read the paper [@hiabu2023glex].
 
-What this post is actually about is Random Planted Forests @hiabu2023random (rpf, [R package on GitHub][rpfgithub]).
+What this post is actually about is Random Planted Forests [@hiabu2023random] (rpf, [R package on GitHub][rpfgithub]).
 I wanted the usage example on the `Bikeshare` data to be interesting and useful, and since interpretability methods tend to only be as good as the models they're trying to explain, I first needed a decent model.
 
 So, that's what this post is about: Tuning rpf, and then using rpf to explain the tuning results.
