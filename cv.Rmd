@@ -31,7 +31,7 @@ Skills {#skills}
 
 - Experience with HPC systems (TORQUE/PBS, Slurm)
 
-- Reproducible reporting and interactive app development (shiny, RMarkdown, quarto)
+- Reproducible reporting and interactive app development (Shiny, RMarkdown, quarto)
 
 - Version control (git, GitHub) and CI/CD (GitHub Actions)
 
@@ -129,13 +129,13 @@ Bremen, Germany
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### Tutor for quantitative methods
+### Teaching assistant for quantitative methods
 
 University of Bremen
 
 Bremen, Germany
 
-- Tutorials for first and second semester undergraduates in psychology
+- Tutorials for first year undergraduates in psychology
 - Basics of descriptive and inferential statistics
 - Application of these contents using R & RStudio
 - Yearly course "Introduction to R"
