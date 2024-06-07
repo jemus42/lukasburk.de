@@ -154,4 +154,4 @@ Bremen, Germany
 
 2016
 
-Heckmann, M. and **Burk, L.**, 2017. Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies. Journal of Open Research Software, 5(1), p.2. DOI: http://doi.org/10.5334/jors.150
+Heckmann, M. & **Burk, L.**. Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies. JORS 5, 2 (2017).

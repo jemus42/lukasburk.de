@@ -18,11 +18,13 @@ in association with the [*Munich Center for Machine Learning (MCML)*](https://mc
 ::: about-links
 [{{< ai orcid >}}](https://orcid.org/0000-0001-7528-3795)
 [{{< ai google-scholar >}}](https://scholar.google.com/citations?user=zcITcLUAAAAJ)
+[{{< ai clarivate >}}](https://www.webofscience.com/wos/author/record/ACB-4594-2022)
 [{{< bi github >}}](https://github.com/jemus42)
 :::
 
-Topics include survival analysis, tree-based methods, and high-dimensional data.
+Topics include survival analysis, benchmarking, tree-based methods, and high-dimensional data.
 
+<!---
 ## Education
 
 -   University of Bremen\
@@ -34,4 +36,6 @@ Topics include survival analysis, tree-based methods, and high-dimensional data.
     B. A.
     in Public Health\
     Sep 2014 -- Sep 2018
+-->
+
 :::

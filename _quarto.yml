@@ -4,12 +4,16 @@ project:
     # Need to exlude cv.Rmd from quarto rendering
     - index.qmd
     - listing.qmd
+    - publications.qmd
     - posts/*
   resources:
     - umami.html
     - cv.html
     - cv_files
     - .well-known
+  preview:
+    port: 4200
+    browser: false
 
 website:
   title: "Lukas Burk"
@@ -23,6 +27,7 @@ website:
     site-name: Lukas Burk
   navbar:
     left:
+      - href: publications.qmd
       - href: listing.qmd
     right:
       - href: cv.html
@@ -47,7 +52,7 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     # https://quarto.org/docs/output-formats/html-code.html
-    code-tools: true
+    code-tools: false
     code-copy: hover
     code-link: true
     highlight-style: github

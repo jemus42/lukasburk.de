@@ -1,0 +1,19 @@
+---
+title: "Publications"
+---
+
+## Preprints
+
+- **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
+- R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
+
+## Journal Articles
+
+- M. Heckmann and **L. Burk**, "Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies." JORS, vol. 5, no. 1, p. 2, Jan. 2017, doi: [10.5334/jors.150](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.150).
+
+## Contributions to Books
+
+- G. Casalicchio and **L. Burk**, "Evaluation and Benchmarking." in *Applied machine learning using mlr3 in R
+*, 1st ed., B. Bischl, R. Sonabend, L. Kotthoff, and M. Lang, Eds., CRC Press, 2024. Available: <https://mlr3book.mlr-org.com/evaluation_and_benchmarking.html>
+
+
