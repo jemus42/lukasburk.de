@@ -5,9 +5,12 @@ title: "Publications"
 ## Preprints
 
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
+
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
 
 ## Journal Articles
+
+- H. J. Coyle-Asbil, **L. Burk** et al., "Energy expenditure prediction in preschool children: a machine learning approach using accelerometry and external validation" Physiol. Meas., vol. 45, no. 9, p. 095015, Sep. 2024, doi: [10.1088/1361-6579/ad7ad2](https://pubmed.ncbi.nlm.nih.gov/39270714/).
 
 - M. Heckmann and **L. Burk**, "Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies." JORS, vol. 5, no. 1, p. 2, Jan. 2017, doi: [10.5334/jors.150](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.150).
 

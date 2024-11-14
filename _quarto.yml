@@ -50,7 +50,9 @@ format:
     toc: true
     email-obfuscation: references
     smooth-scroll: true
+    fig-align: center
     link-external-newwindow: true
+    link-external-icon: true
     # https://quarto.org/docs/output-formats/html-code.html
     code-tools: false
     code-copy: hover
