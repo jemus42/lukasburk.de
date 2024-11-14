@@ -1,0 +1,202 @@
+---
+title: "Installing R and RStudio"
+date: "2024-11-14"
+date-modified: last-modified
+image: img/RStudio-logo-Flat.png
+abstract: |
+  An illustrated guide to setting up R and RStudio on Windows, macOS, and Linux.
+tags: 
+  - setup
+  - guide
+categories:
+  - tutorial
+editor_options: 
+  chunk_output_type: console
+---
+
+## Learning Goal:
+
+We want to achieve two things:
+
+1. Install [**R**][r-project], the programming language. 
+  This allows you to execute R code and run R scripts.
+2. Install **RStudio**, an *Integrated Development Environment* (IDE) for R. 
+  This provides a user-friendly interface to write and run R code.   
+  It is not strictly necessary to work with R, but it is **highly recommended** for everyone who does not already have a strong preference in this regard[^1].
+
+
+[^1]: If you prefer to use Emacs, you are encourage to use [ESS](https://ess.r-project.org/). If you prefer (Neo)vim, there also is [nvim-R](https://github.com/jalvesaq/Nvim-R). You may also want to use [Visual Studio Code](https://code.visualstudio.com/docs/languages/r) if you prefer. Or Try the still in development [Positron](https://positron.posit.co/) if you feel adventurous.
+
+
+[r-project]: https://www.r-project.org/
+[cran]: https://cloud.r-project.org/
+[r-for-mac]: https://mac.r-project.org/
+
+[posit-rstudio]: https://posit.co/download/rstudio-desktop/
+
+
+
+
+### Installing R {#install-r}
+
+To install R, you need to download the installer from [CRAN][cran], the **C**omprehensive **R** **A**rchive **N**etwork and is the official repository for R packages and R itself. The website itself may look a little dated, which is mostly due to it being, in fact, a little dated.
+
+![The CRAN home page](img/cran-download-list.png){#fig-cran fig-alt="The CRAN home page"}
+
+Here you find direct links to download R for Windows, macOS and Linux --- but please note that for Linux, I provide additional instructions below that do not make use of CRAN.
+
+![Download links for common platforms](img/cran-download-win-mac.png){#fig-cran fig-alt="Highlighted links to Download R for macOS and Windows"}
+
+If you are on Windows or macOS, proceed to the appropriate option here.
+Please note that I have extensive experience on macOS and various Linux distributions, but I do not have any recent experience with Windows.
+If you find these instructions lacking, please refer to [the linked video guides](#video-guides) for additional resources.
+
+Now, click on the tab for your operating system for the next steps.
+
+::: {.panel-tabset}
+
+
+#### Windows
+
+You will be presented with multiple links, but the relevant one is the **base** version of R, which includes R with the core components.
+
+![The R for Windows listing page](img/cran-windows-base-box.png){#fig-r-win-list1 fig-alt="Various download links for R on Windows, including base and RTools"}
+
+Click on it and you will be greeted with this page:
+
+<!-- ![The CRAN home page](img/cran-windows.png){#fig-cran fig-alt="The CRAN home page"} -->
+![Download link for Windows](img/cran-windows-box.png){#fig-r-win-download fig-alt="Highlighted link 'Download R-4.4.2' for Windows"}
+
+Here, click the highlighted download link to download the installer.
+
+Run the installer on your PC and follow the instructions.
+You may be asked to accept the usual licenses of course, and can accept nay other defaults.
+
+##### Optional: RTools
+
+While you are here, you might as well also install **RTools**.  
+You may not need this at first, but at some point in the future you may be asked to, for example, install an in-development R package from a different source than CRAN. In these cases it may be necessary to compile the package from source, which requires additional compilers and tools --- this is what RTools provides.
+
+Navigate back to the overview site where you found **base** R and look for the link to **RTools**.
+
+![The R for Windows listing page](img/cran-windows-rtools-link.png){#fig-r-win-list2 fig-alt="THe previous listing page, highlight the link to Rtools"}
+
+Click on the link to **RTools** 4.4 (or whichever is the most recent version) and download the installer.
+
+![The RTools overview page](img/cran-windows-rtools-download.png){#fig-rtools fig-alt="Listing page showing download links to RTools for various R versions with the most recent one on top"}
+
+Run the installer and you should be good to go!
+
+#### macOS
+
+The download page for macOS is quite simple: For reasonably modern systems, you can just click the top link to download the latest version of R for macOS.
+
+Click on the top link to download the latest version of R for macOS on recent Apple computers. 
+For older systems (pre 2020's Apple Silicon), you may need to use second link for Intel Macs.
+
+![The macOS download page](img/cran-macos-highlight.png){#fig-r-mac fig-alt="The CRAN home page"}
+
+For even older systems you may need to scroll down further for *"Binaries for legacy macOS/OS X systems"*, but I do not have experience with installing R on legacy systems unfortunately.
+
+In any case, you will have downloaded a `.pkg` file, which you can run by double-clicking it and following the instructions, accepting any defaults that may come up.
+
+#### Linux (e.g. Ubuntu)
+
+Rather than installing R from CRAN, I have made very good experience with a tool called [**rig**](https://github.com/r-lib/rig?tab=readme-ov-file#the-r-installation-manager).
+
+You can install it on many Linux platforms, including Ubuntu, by following the instructions provided [in it's documentation](https://github.com/r-lib/rig?tab=readme-ov-file#installing-rig-on-linux-).
+
+After installing it, you can install R by running the following command in your terminal:
+
+
+```sh
+rig add release
+```
+
+Afterwards, running `R` in your terminal should start R.
+
+:::
+
+Whichever path you chose, you should now have R installed on your system!
+
+
+### Installing RStudio {#install-rstudio}
+
+Now we can move on to install RStudio, the IDE for R.
+We get it from the [Positron website][posit-rstudio], where you will find a download link for **RStudio Desktop**.
+
+![Posit's download page for RStudio Desktop](img/rstudio-header.png){fig-alt=""}
+
+You will likely find two large buttons, one for installing R --- which you presumably already did! If not, please scroll up on this site.
+
+The second link hopefully links to the download for RStudio on your system, but if not, you can find the appropriate link in the list below.
+
+![The big download button which should be appropriate for your system](img/rstudio-big-box.png){fig-alt=""}
+
+Here you find download links for Windows, macOS, various versions of Ubuntu, and less common Linux distributions.
+
+![Download links for RStudio for various platforms](img/rstudio-list-box.png){fig-alt=""}
+
+Click on the appropriate link for your system to download the installer, and run it just like you did the R installer before or however else you typically install software.
+
+### Checking the Installation {#check-installation}
+
+After installing R and RStudio, you can check if everything is working by opening RStudio.
+Depending on your platform you might either find a desktop shortcut showing the RStudio logo or you can find it in your applications menu.
+
+![The RStudio Logo](img/RStudio-logo-Flat.png){width="300" fig-alt="A blue ball with the letter R in it, with 'Studio' right next to it"}
+
+When you open RStudio, you should see a window similar to the one below.
+
+![An empty RStudio session with nothing in it](img/rstudio-open.png){#fig-rstudio-empty fig-alt="An empty RStudio window with 4 quadrants"}
+
+The left half constitutes the *console* view, where you can type and execute R code directly.
+We will now try installing the [tidyverse][https://www.tidyverse.org/], a collection of packages that are very useful for data analysis and visualization. The `tidyverse` package itself is a collection of multiple other packages, each in turn providing different functionality.
+In R, packages have to be installed _once_ and then _loaded_ in each new session.
+
+Type
+
+```r
+install.packages("tidyverse")
+```
+
+and press enter. You should see some activity in the console, and after a while you should see a message that the package was installed successfully. The text may be red, but that does not necessarily imply there was an error!
+
+![The RStudio console after successfully installing the `tidyverse` package](img/rstudio-open-install.png){#fig-tidyverse fig-alt="R message showing 'Attaching core tidyverse packages' dplyr, ggplot2, etc. and informing of conflicts between dplyr::filter and stats::filter and dplyr::lag and stats::lag"}
+
+Finally, type 
+
+```r
+library("tidyverse")
+```
+
+and press enter. If you do not see any error messages, you have successfully installed R and RStudio, and even set up the tidyverse already! 
+
+![The tidyverse loading message informing us of which packages are attached](img/rstudio-open-tidyverse.png){#fig- fig-alt=""}
+
+
+### Video Guides {#video-guides}
+
+If you prefer a video guide, many are available on YouTube.  
+Here are a few examples:
+
+<details>
+<summary>Click to expand embedded YouTube videos</summary>
+
+#### Windows 10
+
+{{< video https://www.youtube.com/watch?v=TFGYlKvQEQ4 title="Windows 10" >}}
+
+#### Windows 11
+
+{{< video https://www.youtube.com/watch?v=9SzKJH93t5o >}} 
+
+#### macOS
+
+{{< video https://www.youtube.com/watch?v=I5WIMX4LK8M >}}
+
+#### Ubuntu (should also apply for e.g. Linux Mint)
+
+{{< video https://www.youtube.com/watch?v=eE1zh0YVMeM >}}
+
+</details>
