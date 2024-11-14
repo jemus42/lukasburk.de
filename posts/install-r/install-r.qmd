@@ -2,7 +2,7 @@
 title: "Installing R and RStudio"
 date: "2024-11-14"
 date-modified: last-modified
-image: img/RStudio-logo-Flat.png
+image: img/RStudio-Logo-Flat.png
 abstract: |
   An illustrated guide to setting up R and RStudio on Windows, macOS, and Linux.
 tags: 
