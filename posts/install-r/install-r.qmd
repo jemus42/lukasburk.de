@@ -35,9 +35,7 @@ We want to achieve two things:
 [posit-rstudio]: https://posit.co/download/rstudio-desktop/
 
 
-
-
-### Installing R {#install-r}
+## Installing R {#install-r}
 
 To install R, you need to download the installer from [CRAN][cran], the **C**omprehensive **R** **A**rchive **N**etwork and is the official repository for R packages and R itself. The website itself may look a little dated, which is mostly due to it being, in fact, a little dated.
 
@@ -56,7 +54,7 @@ Now, click on the tab for your operating system for the next steps.
 ::: {.panel-tabset}
 
 
-#### Windows
+### Windows
 
 You will be presented with multiple links, but the relevant one is the **base** version of R, which includes R with the core components.
 
@@ -72,7 +70,7 @@ Here, click the highlighted download link to download the installer.
 Run the installer on your PC and follow the instructions.
 You may be asked to accept the usual licenses of course, and can accept nay other defaults.
 
-##### Optional: RTools
+#### Optional: RTools
 
 While you are here, you might as well also install **RTools**.  
 You may not need this at first, but at some point in the future you may be asked to, for example, install an in-development R package from a different source than CRAN. In these cases it may be necessary to compile the package from source, which requires additional compilers and tools --- this is what RTools provides.
@@ -87,7 +85,7 @@ Click on the link to **RTools** 4.4 (or whichever is the most recent version) an
 
 Run the installer and you should be good to go!
 
-#### macOS
+### macOS
 
 The download page for macOS is quite simple: For reasonably modern systems, you can just click the top link to download the latest version of R for macOS.
 
@@ -100,7 +98,7 @@ For even older systems you may need to scroll down further for *"Binaries for le
 
 In any case, you will have downloaded a `.pkg` file, which you can run by double-clicking it and following the instructions, accepting any defaults that may come up.
 
-#### Linux (e.g. Ubuntu)
+### Linux (e.g. Ubuntu)
 
 Rather than installing R from CRAN, I have made very good experience with a tool called [**rig**](https://github.com/r-lib/rig?tab=readme-ov-file#the-r-installation-manager).
 
@@ -120,7 +118,7 @@ Afterwards, running `R` in your terminal should start R.
 Whichever path you chose, you should now have R installed on your system!
 
 
-### Installing RStudio {#install-rstudio}
+## Installing RStudio {#install-rstudio}
 
 Now we can move on to install RStudio, the IDE for R.
 We get it from the [Positron website][posit-rstudio], where you will find a download link for **RStudio Desktop**.
@@ -139,7 +137,7 @@ Here you find download links for Windows, macOS, various versions of Ubuntu, and
 
 Click on the appropriate link for your system to download the installer, and run it just like you did the R installer before or however else you typically install software.
 
-### Checking the Installation {#check-installation}
+## Checking the Installation {#check-installation}
 
 After installing R and RStudio, you can check if everything is working by opening RStudio.
 Depending on your platform you might either find a desktop shortcut showing the RStudio logo or you can find it in your applications menu.
@@ -175,7 +173,7 @@ and press enter. If you do not see any error messages, you have successfully ins
 ![The tidyverse loading message informing us of which packages are attached](img/rstudio-open-tidyverse.png){#fig- fig-alt=""}
 
 
-### Video Guides {#video-guides}
+## Video Guides {#video-guides}
 
 If you prefer a video guide, many are available on YouTube.  
 Here are a few examples:
@@ -183,19 +181,19 @@ Here are a few examples:
 <details>
 <summary>Click to expand embedded YouTube videos</summary>
 
-#### Windows 10
+### Windows 10
 
 {{< video https://www.youtube.com/watch?v=TFGYlKvQEQ4 title="Windows 10" >}}
 
-#### Windows 11
+### Windows 11
 
 {{< video https://www.youtube.com/watch?v=9SzKJH93t5o >}} 
 
-#### macOS
+### macOS
 
 {{< video https://www.youtube.com/watch?v=I5WIMX4LK8M >}}
 
-#### Ubuntu (should also apply for e.g. Linux Mint)
+### Ubuntu (should also apply for e.g. Linux Mint)
 
 {{< video https://www.youtube.com/watch?v=eE1zh0YVMeM >}}
 
