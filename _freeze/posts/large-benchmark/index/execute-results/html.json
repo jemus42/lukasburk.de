@@ -1,8 +1,11 @@
 {
-  "hash": "c6b2719148c98d8afd126b24372102a8",
+  "hash": "0b4c3ae68f3184e1dda0cb95cbf9f9ba",
   "result": {
-    "markdown": "---\ntitle: \"Conducting a Large Benchmark Experiment and Maintaining Sanity (Mostly)\"\ndate: \"2024-03-01\"\ndescription: Another way to summarize this?\nabstract: |\n  In which I walk through all the things I've learned while conducting a large benchmark\n  experiment in which I've shot myself in the foot less often than I could have.\ncategories: \n  - ml\ntags: \n  - hpc\n  - hpo\n  - benchmarking\n  - survival-analysis\nimage: \"\"\neditor_options: \n  chunk_output_type: console\n---\n\n\n",
-    "supporting": [],
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Conducting a Large Benchmark Experiment and Maintaining Sanity (Mostly)\"\ndate: \"2024-03-01\"\ndescription: Another way to summarize this?\ndraft: true\nabstract: |\n  In which I walk through all the things I've learned while conducting a large benchmark\n  experiment in which I've shot myself in the foot less often than I could have.\ncategories: \n  - ml\ntags: \n  - hpc\n  - hpo\n  - benchmarking\n  - survival-analysis\nimage: \"\"\neditor_options: \n  chunk_output_type: console\n---\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

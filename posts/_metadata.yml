@@ -7,10 +7,12 @@ author:
   #     city: Bremen
   #   - name: Department of Statistics, LMU Munich
   #     city: Munich
-
+date-modified: last-modified
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: true
+# also in _quarto.yml
+# freeze: true
 
-# Enable banner style title blocks
-title-block-banner: true
+# Banner style title blocks
+# https://quarto.org/docs/authoring/title-blocks.html
+title-block-banner: false
