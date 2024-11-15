@@ -7,6 +7,7 @@ project:
     - publications.qmd
     - posts/*
   resources:
+    - favicon.ico
     - umami.html
     - cv.html
     - cv_files
@@ -20,7 +21,7 @@ website:
   # site-url and description needed for RSS feed
   site-url: https://lukasburk.de
   description: "lukasburk.de - A perfectly cromulent website."
-  favicon: profile.jpg
+  favicon: assets/profile.jpg
   twitter-card: true
   open-graph:
     locale: en_US
@@ -45,8 +46,8 @@ website:
 format:
   html:
     theme:
-      light: [flatly, style-light.scss, style-common.scss]
-      dark: [darkly, style-dark.scss, style-common.scss]
+      light: [flatly, style/light.scss, style/common.scss]
+      dark: [darkly, style/dark.scss, style/common.scss]
     toc: true
     email-obfuscation: references
     smooth-scroll: true
@@ -67,7 +68,7 @@ format:
     # resource-path:
     #   - "/Users/Lukas/.local/csl"
     include-in-header:
-      - umami.html
+      - assets/umami.html
     # Don't like how this is rendered by default, adding license manually in footer
     #license: CC BY
 
