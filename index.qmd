@@ -5,6 +5,7 @@ about:
   template: solana
   image: profile.jpg
   image-shape: round
+comments: false
 editor_options: 
   chunk_output_type: console
 ---

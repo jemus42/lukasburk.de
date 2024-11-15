@@ -8,4 +8,5 @@ listing:
   sort-ui: false
   filter-ui: true
   feed: true
+comments: false
 ---
