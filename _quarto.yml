@@ -68,6 +68,8 @@ format:
     # resource-path:
     #   - "/Users/Lukas/.local/csl"
     include-in-header:
+      - text: |
+          <meta name="fediverse:creator" content="@jemus@norden.social" />
       - assets/umami.html
     comments:
       giscus:
