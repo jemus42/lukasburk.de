@@ -137,13 +137,16 @@ Afterwards, running `R` in your terminal should start R.
 
 That's it!  
 Whichever path you chose, you should now have R installed on your system!
-Note that this is only the so-called *"base R"* distributions, which means that it contains the core parts of the language. However, there is an extensive package ecosystem that you can install on top of this, extending the functionality of R in many ways. We will install one collection of packages after the next section.
+Note that this is only the so-called *"base R"* distribution, which means that it contains the core parts of the language.
+However, there is an extensive package ecosystem that you can install on top of this, extending the functionality of R in many ways.
+We will install one collection of packages after the next section.
 
 
 ## Installing RStudio {#install-rstudio}
 
 We move on to install RStudio, the IDE for R.
-We get it from the [Posit website][posit-rstudio], where you will find a download link for **RStudio Desktop**. Posit is the public benefit company formally known as RStudio, so you might run into references to both "RStudio the company" and "RStudio the IDE" on the internet.
+We get it from the [Posit website][posit-rstudio], where you will find a download link for **RStudio Desktop**.
+Posit is the public benefit company formally known as RStudio, so you might run into references to both "RStudio the company" and "RStudio the IDE" on the internet.
 These days it is the company *Posit*, publishing the open-source IDE *RStudio*.
 
 ![Posit's download page for RStudio Desktop](img/rstudio-header.png){fig-alt="RStudo Desktop description reading 'Used by millions of people weekly, the RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python. [...]'"}
