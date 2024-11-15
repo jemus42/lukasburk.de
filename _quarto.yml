@@ -69,6 +69,16 @@ format:
     #   - "/Users/Lukas/.local/csl"
     include-in-header:
       - assets/umami.html
+    comments:
+      giscus:
+        repo: jemus42/lukasburk.de
+        category: Announcements
+        mapping: pathname
+        reactions-enabled: true
+        loading: lazy
+        theme:
+          light: light
+          dark: dark_dimmed
     # Don't like how this is rendered by default, adding license manually in footer
     #license: CC BY
 
