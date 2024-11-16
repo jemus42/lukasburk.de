@@ -3,7 +3,7 @@ title: "Lukas Burk"
 about:
   id: heading
   template: solana
-  image: asstes/profile.jpg
+  image: assets/profile.jpg
   image-shape: round
 comments: false
 editor_options: 
