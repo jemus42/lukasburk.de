@@ -22,10 +22,17 @@ $code-block-bg-alpha: -.8;
   text-decoration: underline;
 }
 
-.whoopsie {
-  display: none;
+// Remove external link icons on landing page icons
+.about-links .external:after {
+  background-image: none;
+  margin-left: .1em;
+  padding-right: .1em;
 }
 
+// normal text color
+.about-links a {
+  color: var(--bs-text-color-rgb);
+}
 
 @media (max-width: 991.98px) {
   #education > ul {
