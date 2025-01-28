@@ -3,7 +3,23 @@ title: "Publications"
 comments: false
 ---
 
+```{r}
+#| include: false
+mybib <- RefManageR::ReadBib("bib.bib", check = FALSE) 
+```
+
+
+::: pub-links
+
+[{{< ai orcid >}}](https://orcid.org/0000-0001-7528-3795)
+[{{< ai google-scholar >}}](https://scholar.google.com/citations?user=zcITcLUAAAAJ)
+[{{< ai clarivate >}}](https://www.webofscience.com/wos/author/record/ACB-4594-2022)
+
+:::
+
 ## Preprints
+
+- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” Jan. 19, 2025, arXiv: arXiv:2501.11178. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
 
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
 
@@ -19,5 +35,3 @@ comments: false
 
 - G. Casalicchio and **L. Burk**, "Evaluation and Benchmarking." in *Applied machine learning using mlr3 in R
 *, 1st ed., B. Bischl, R. Sonabend, L. Kotthoff, and M. Lang, Eds., CRC Press, 2024. Available: <https://mlr3book.mlr-org.com/evaluation_and_benchmarking.html>
-
-

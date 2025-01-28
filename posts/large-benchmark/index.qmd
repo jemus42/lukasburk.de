@@ -1,0 +1,28 @@
+---
+title: "Conducting a Large Benchmark Experiment and Maintaining Sanity (Mostly)"
+date: "2024-03-01"
+description: Another way to summarize this?
+draft: true
+abstract: |
+  In which I walk through all the things I've learned while conducting a large benchmark
+  experiment in which I've shot myself in the foot less often than I could have.
+categories: 
+  - ml
+tags: 
+  - hpc
+  - hpo
+  - benchmarking
+  - survival-analysis
+image: ""
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  error = FALSE, warning = FALSE, message = FALSE
+)
+
+set.seed(1)
+
+```

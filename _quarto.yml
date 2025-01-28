@@ -3,7 +3,8 @@ project:
   render:
     # Need to exlude cv.Rmd from quarto rendering
     - index.qmd
-    - listing.qmd
+    - posts.qmd
+    - talks.qmd
     - publications.qmd
     - posts/*
   resources:
@@ -29,7 +30,8 @@ website:
   navbar:
     left:
       - href: publications.qmd
-      - href: listing.qmd
+      - href: talks.qmd
+      - href: posts.qmd
     right:
       - href: cv.html
         text: CV

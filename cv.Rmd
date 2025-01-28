@@ -146,12 +146,4 @@ Bremen, Germany
 Publications {data-icon=file}
 --------------------------------------------------------------------------------
 
-### Gridsampler: A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies
-
-Implementation of the user interface in Shiny
-
-Bremen, Germany
-
-2016
-
-Heckmann, M. & **Burk, L.**. Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies. JORS 5, 2 (2017).
+Please refer to [lukasburk.de/publications](https://lukasburk.de/publications)
