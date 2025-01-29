@@ -9,7 +9,7 @@ comments: false
 
 ## 2025
 
-- [DAGStat 2025](https://dagstat2025.de/): *TBA*. [Slides](#)
+- [DAGStat 2025](https://dagstat2025.de/): *TBA*. [Slides TBA](#)
 
 ## 2024
 
@@ -23,7 +23,7 @@ of Survival Models on Low-Dimensional Data*.
 
 ## 2023
 
-- [CEN 2023](https://cen2023.github.io/home/): *CooPeR: High-Dimensional Variable Selection
+- [CEN 2023](https://cen2023.github.io/home/): *High-Dimensional Variable Selection
 for Competing Risks with
 Cooperative Penalized Regression*.  
 [Slides](https://slides.lukasburk.de/2023/09-cooper/07SEP23_Lukas_Burk.pdf)

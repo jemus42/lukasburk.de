@@ -19,7 +19,7 @@ mybib <- RefManageR::ReadBib("bib.bib", check = FALSE)
 
 ## Preprints
 
-- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” Jan. 19, 2025, arXiv: arXiv:2501.11178. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
+- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” arXiv,Jan. 19, 2025. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
 
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
 

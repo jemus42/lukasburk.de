@@ -3,23 +3,26 @@
 // Code blocks
 $code-block-bg-alpha: -.8;
 
-/* css styles */
-#heading > .about-links {
-  justify-content: center;
-}
 
-#heading > div > p > a {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 2rem;
-}
+#heading {
+  div > p > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+  }
 
-#heading > p > a {
-  text-decoration: none;
-}
-
-#heading > p > a:hover {
-  text-decoration: underline;
+  about-links {
+    justify-content: center;
+  }
+  
+  p {
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  } 
 }
 
 // Remove external link icons on landing page icons
@@ -36,25 +39,28 @@ $code-block-bg-alpha: -.8;
 //   color: var(--bs-text-color-rgb);
 // }
 
-.pub-links p,
-.about-links p {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0;
+.pub-links,
+.about-links {
+  p {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .pub-links {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  a {
+    display: inline-block; /* or display: block */
+    flex: 1; /* This will make each anchor take up equal space */
+    text-align: center; /* This will center the SVGs within their flex space */
+  }
 }
 
-.pub-links a {
-  display: inline-block; /* or display: block */
-  flex: 1; /* This will make each anchor take up equal space */
-  text-align: center; /* This will center the SVGs within their flex space */
-}
 
 @media (max-width: 991.98px) {
   #education > ul {
