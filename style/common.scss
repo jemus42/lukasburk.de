@@ -3,7 +3,6 @@
 // Code blocks
 $code-block-bg-alpha: -.8;
 
-
 #heading {
   div > p > a {
     padding-left: 10px;
@@ -55,7 +54,7 @@ $code-block-bg-alpha: -.8;
   margin-bottom: 2rem;
 
   a {
-    display: inline-block; /* or display: block */
+    display: inline-block;
     flex: 1; /* This will make each anchor take up equal space */
     text-align: center; /* This will center the SVGs within their flex space */
   }
