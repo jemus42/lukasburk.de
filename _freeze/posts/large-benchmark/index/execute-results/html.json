@@ -3,9 +3,7 @@
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: \"Conducting a Large Benchmark Experiment and Maintaining Sanity (Mostly)\"\ndate: \"2024-03-01\"\ndescription: Another way to summarize this?\ndraft: true\nabstract: |\n  In which I walk through all the things I've learned while conducting a large benchmark\n  experiment in which I've shot myself in the foot less often than I could have.\ncategories: \n  - ml\ntags: \n  - hpc\n  - hpo\n  - benchmarking\n  - survival-analysis\nimage: \"\"\neditor_options: \n  chunk_output_type: console\n---\n\n\n",
-    "supporting": [
-      "index_files"
-    ],
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
