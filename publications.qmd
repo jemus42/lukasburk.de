@@ -19,13 +19,15 @@ mybib <- RefManageR::ReadBib("bib.bib", check = FALSE)
 
 ## Preprints
 
-- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” arXiv,Jan. 19, 2025. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
+- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, "Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests." arXiv,Jan. 19, 2025. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
 
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
 
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
 
 ## Journal Articles
+
+- **L. Burk**, A. Bender, and M. N. Wright, "High-Dimensional Variable Selection With Competing Events Using Cooperative Penalized Regression", Biometrical Journal, vol. 67, no. 1, p. e70036, 2025, doi: [10.1002/bimj.70036](https://doi.org/10.1002/bimj.70036).
 
 - H. J. Coyle-Asbil, **L. Burk** et al., "Energy expenditure prediction in preschool children: a machine learning approach using accelerometry and external validation" Physiol. Meas., vol. 45, no. 9, p. 095015, Sep. 2024, doi: [10.1088/1361-6579/ad7ad2](https://pubmed.ncbi.nlm.nih.gov/39270714/).
 
