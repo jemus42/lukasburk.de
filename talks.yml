@@ -1,0 +1,25 @@
+- venue: DAGStat
+  year: 2025
+  url: https://dagstat2025.de/
+  title: 'Random Planted Forest: A Directly Interpretable Tree Ensemble'
+  slides: https://slides.lukasburk.de/2025/03-dagstat/rpf.pdf
+
+- venue: Statistical Computing
+  year: 2024
+  url: https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024
+  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional
+    Data
+  slides: https://slides.lukasburk.de/2024/07-statcomp/survbench.pdf
+
+- venue: 70th Biometric Colloqium
+  year: 2024
+  url: https://www.biometrische-gesellschaft.de/termine/biometrische-kolloquien/70th-biometric-colloquium-2024-in-luebeck.html
+  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional
+    Data
+  slides: https://slides.lukasburk.de/2024/02-biocoll/01MAR24_Lukas_Burk.pdf
+
+- venue: CEN
+  year: 2023
+  url: https://cen2023.github.io/home/
+  title: High-Dimensional Variable Selection for Competing Risks with Cooperative Penalized Regression
+  slides: https://slides.lukasburk.de/2023/09-cooper/07SEP23_Lukas_Burk.pdf

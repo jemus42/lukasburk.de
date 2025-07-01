@@ -3,24 +3,41 @@ title: "Talks"
 comments: false
 ---
 
-<!--
-- [venue](link)\n *title*. [Slides](link)
--->
+```{r read-talks}
+#| include: false
+talks <- yaml::read_yaml("talks.yml") |>
+    lapply(as.data.frame) |>
+    do.call(rbind, args = _)
 
-## 2025
+# Seeded yaml with this (added year later)
 
-- [DAGStat 2025](https://dagstat2025.de/)  
-*Random Planted Forest: A Directly Interpretable Tree Ensemble* --- [Slides](https://slides.lukasburk.de/2025/03-dagstat/rpf.pdf)
+# tibble::tribble(
+#     ~venue, ~url, ~title, ~slides,
+# "DAGStat 2025", "https://dagstat2025.de/", "Random Planted Forest: A Directly Interpretable Tree Ensemble", "https://slides.lukasburk.de/2025/03-dagstat/rpf.pdf",
+# "Statistical Computing 2024", "https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024", "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data", "https://slides.lukasburk.de/2024/07-statcomp/survbench.pdf"
+# ) |>
+#     yaml::write_yaml("talks.yml", column.major = FALSE)
+```
 
-## 2024
 
-- [Statistical Computing 2024](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024)  
-*A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data* --- [Slides](https://slides.lukasburk.de/2024/07-statcomp/survbench.pdf)
+```{r print-talks}
+#| results: asis
+#| echo: false
 
-- [70th Biometric Colloqium](https://www.biometrische-gesellschaft.de/termine/biometrische-kolloquien/70th-biometric-colloquium-2024-in-luebeck.html)  
-*A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data* --- [Slides](https://slides.lukasburk.de/2024/02-biocoll/01MAR24_Lukas_Burk.pdf)
+for (this_year in unique(talks$year)) {
+    cat(glue::glue("## {this_year}\n\n\n"))
 
-## 2023
+    these_talks <- talks[talks$year == this_year, , drop = FALSE]
 
-- [CEN 2023](https://cen2023.github.io/home/)  
-*High-Dimensional Variable Selection for Competing Risks with Cooperative Penalized Regression* --- [Slides](https://slides.lukasburk.de/2023/09-cooper/07SEP23_Lukas_Burk.pdf)
+    for (i in seq_len(nrow(these_talks))) {
+
+        this_talk <- these_talks[i, , drop = FALSE]
+
+        cat(glue::glue_data(this_talk, "\n- [{venue}]({url})\n   *{title}* --- [Slides]({slides})"))
+
+        cat("\n")
+    }
+
+    cat("\n")
+}
+```
