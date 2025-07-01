@@ -4,13 +4,13 @@ comments: false
 ---
 
 <!--
-- [venue](link): *title*. [Slides](link)
+- [venue](link)\n *title*. [Slides](link)
 -->
 
 ## 2025
 
 - [DAGStat 2025](https://dagstat2025.de/)  
-*TBA* --- [Slides TBA](#)
+*Random Planted Forest: A Directly Interpretable Tree Ensemble* --- [Slides](https://slides.lukasburk.de/2025/03-dagstat/rpf.pdf)
 
 ## 2024
 
