@@ -34,7 +34,7 @@ mybib <- RefManageR::ReadBib("bib.bib", check = FALSE)
 
 ## Conference Papers
 
-- Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 15, Art. no. 15, Apr. 2025, doi: 10.1609/aaai.v39i15.33712.
+- Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, "Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests", Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 15, Art. no. 15, Apr. 2025, doi: 10.1609/aaai.v39i15.33712.
 
 
 ## Contributions to Books
