@@ -4,6 +4,7 @@ comments: false
 ---
 
 ```{r}
+#| eval: false
 #| include: false
 mybib <- RefManageR::ReadBib("bib.bib", check = FALSE) 
 ```
@@ -19,8 +20,6 @@ mybib <- RefManageR::ReadBib("bib.bib", check = FALSE)
 
 ## Preprints
 
-- K. Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, "Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests." arXiv,Jan. 19, 2025. doi: [10.48550/arXiv.2501.11178](https://arxiv.org/abs/2501.11178).
-
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
 
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
@@ -32,6 +31,11 @@ mybib <- RefManageR::ReadBib("bib.bib", check = FALSE)
 - H. J. Coyle-Asbil, **L. Burk** et al., "Energy expenditure prediction in preschool children: a machine learning approach using accelerometry and external validation" Physiol. Meas., vol. 45, no. 9, p. 095015, Sep. 2024, doi: [10.1088/1361-6579/ad7ad2](https://pubmed.ncbi.nlm.nih.gov/39270714/).
 
 - M. Heckmann and **L. Burk**, "Gridsampler – A Simulation Tool to Determine the Required Sample Size for Repertory Grid Studies." JORS, vol. 5, no. 1, p. 2, Jan. 2017, doi: [10.5334/jors.150](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.150).
+
+## Conference Papers
+
+- Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, “Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests,” Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 15, Art. no. 15, Apr. 2025, doi: 10.1609/aaai.v39i15.33712.
+
 
 ## Contributions to Books
 
