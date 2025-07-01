@@ -53,32 +53,6 @@ Main
 
 <!-- Optional descriptive content -->
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-### M. Sc. in Medical Biometry / Biostatistics
-
-University of Bremen
-
-Bremen, Germany
-
-2021
-
-Thesis: *A Comparison of Deep Learning Models for Energy Expenditure Prediction in Preschoolers*
-
-Leibniz Institute for Prevention Research and Epidemiology - BIPS
-
-### B. A. in Public Health
-
-University of Bremen
-
-Bremen, Germany
-
-2018
-
-Thesis: *Detection of Concomitant Use of Medications in GePaRD*
-
-Leibniz Institute for Prevention Research and Epidemiology - BIPS
 
 Work {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -125,6 +99,32 @@ Bremen, Germany
 - Creation of an R / Shiny application for interactive data validation
 - Data management and descriptive statistics
 
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### M. Sc. in Medical Biometry / Biostatistics
+
+University of Bremen
+
+Bremen, Germany
+
+2021
+
+Thesis: *A Comparison of Deep Learning Models for Energy Expenditure Prediction in Preschoolers*
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
+
+### B. A. in Public Health
+
+University of Bremen
+
+Bremen, Germany
+
+2018
+
+Thesis: *Detection of Concomitant Use of Medications in GePaRD*
+
+Leibniz Institute for Prevention Research and Epidemiology - BIPS
 
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
