@@ -1,14 +1,17 @@
 
-all: cv.html cv.pdf site
+all: cv site
 
 rmd = cv.Rmd
 
 cv.html: $(rmd)
-	R -e "rmarkdown::render('$(rmd)')"
+	Rscript -e "rmarkdown::render('$(rmd)')"
 
 cv.pdf: $(rmd)
 	Rscript -e "pagedown::chrome_print('$(rmd)')"
 
+.PHONY: cv
+cv: cv.html cv.pdf
+
 .PHONY: site
-site:
+site: 
 	quarto render
