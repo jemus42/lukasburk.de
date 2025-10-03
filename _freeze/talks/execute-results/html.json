@@ -1,0 +1,15 @@
+{
+  "hash": "ae34b9d9ccfff83582f0a3479d791927",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Talks\"\ncomments: false\n---\n\n\n\n\n## 2025\n\n- [DAGStat](https://dagstat2025.de/)\n   *Random Planted Forest: A Directly Interpretable Tree Ensemble* --- [Slides](https://slides.lukasburk.de/2025/03-dagstat/rpf.pdf)\n\n## 2024\n\n- [Statistical Computing](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024)\n   *A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data* --- [Slides](https://slides.lukasburk.de/2024/07-statcomp/survbench.pdf)\n- [70th Biometric Colloqium](https://www.biometrische-gesellschaft.de/termine/biometrische-kolloquien/70th-biometric-colloquium-2024-in-luebeck.html)\n   *A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data* --- [Slides](https://slides.lukasburk.de/2024/02-biocoll/01MAR24_Lukas_Burk.pdf)\n\n## 2023\n\n- [CEN](https://cen2023.github.io/home/)\n   *High-Dimensional Variable Selection for Competing Risks with Cooperative Penalized Regression* --- [Slides](https://slides.lukasburk.de/2023/09-cooper/07SEP23_Lukas_Burk.pdf)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
