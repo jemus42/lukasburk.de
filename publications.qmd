@@ -14,6 +14,8 @@ comments: false
 
 ## Preprints
 
+- J. Piller, L. Orsini, S. Wiegrebe, J. Zobolas, **L. Burk**, S. H. Langbein, P. Studener, M. Goeswein, A. Bender, "Reduction Techniques for Survival Analysis." arXiv, Aug 07, 2025. doi: [2508.05715/arXiv.2508.05715](https://arxiv.org/abs/2508.05715)
+
 - **L. Burk**, J. Zobolas, B. Bischl, A. Bender, M. N. Wright, and R. Sonabend, "A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data." arXiv, Jun. 06, 2024. doi: [10.48550/arXiv.2406.04098](https://arxiv.org/abs/2406.04098).
 
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
@@ -29,7 +31,6 @@ comments: false
 ## Conference Papers
 
 - Blesch, N. Koenen, J. Kapar, P. Golchian, **L. Burk**, M. Loecher, M. N. Wright, "Conditional Feature Importance with Generative Modeling Using Adversarial Random Forests", Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 15, Art. no. 15, Apr. 2025, doi: 10.1609/aaai.v39i15.33712.
-
 
 ## Contributions to Books
 
