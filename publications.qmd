@@ -22,6 +22,8 @@ comments: false
 
 ## Journal Articles
 
+- S. Fischer, J. Zobolas, R. Sonabend, M. Becker, M. Lang, M. Binder, L. Schneider, **L. Burk**, P. Schratz, B. C. Jaeger, S. A. Lauer, L. A. Kapsner, M. Mücke, Z. Wang, D. Pulatov, K. Ganz, H. Funk, L. Harutyunyan, P. Camilleri, P. Kopper, A. Bender, B. Zhou, N. German, L. Koers, A. Nazarova, B. Bischl, "mlr3extralearners: Expanding the mlr3 Ecosystem with Community-Driven Learner Integration", Journal of Open Source Software, vol. 10, no. 115, p. 8331, Nov. 2025, doi: [10.21105/joss.08331](https://joss.theoj.org/papers/10.21105/joss.08331).
+
 - **L. Burk**, A. Bender, and M. N. Wright, "High-Dimensional Variable Selection With Competing Events Using Cooperative Penalized Regression", Biometrical Journal, vol. 67, no. 1, p. e70036, 2025, doi: [10.1002/bimj.70036](https://doi.org/10.1002/bimj.70036).
 
 - H. J. Coyle-Asbil, **L. Burk** et al., "Energy expenditure prediction in preschool children: a machine learning approach using accelerometry and external validation" Physiol. Meas., vol. 45, no. 9, p. 095015, Sep. 2024, doi: [10.1088/1361-6579/ad7ad2](https://pubmed.ncbi.nlm.nih.gov/39270714/).
