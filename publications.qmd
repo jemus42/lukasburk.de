@@ -20,6 +20,8 @@ comments: false
 
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
 
+- R. Sonabend, F. Pfisterer, A. Mishler, M. Schauer, **L. Burk**, S. Mukherjee, and S. Vollmer, "Flexible Group Fairness Metrics for Survival Analysis," arXiv: Jul. 22, 2022. doi: [10.48550/arXiv.2206.03256](https://arxiv.org/abs/2206.03256).
+
 ## Journal Articles
 
 - S. Fischer, J. Zobolas, R. Sonabend, M. Becker, M. Lang, M. Binder, L. Schneider, **L. Burk**, P. Schratz, B. C. Jaeger, S. A. Lauer, L. A. Kapsner, M. Mücke, Z. Wang, D. Pulatov, K. Ganz, H. Funk, L. Harutyunyan, P. Camilleri, P. Kopper, A. Bender, B. Zhou, N. German, L. Koers, A. Nazarova, B. Bischl, "mlr3extralearners: Expanding the mlr3 Ecosystem with Community-Driven Learner Integration", Journal of Open Source Software, vol. 10, no. 115, p. 8331, Nov. 2025, doi: [10.21105/joss.08331](https://joss.theoj.org/papers/10.21105/joss.08331).
@@ -36,5 +38,6 @@ comments: false
 
 ## Contributions to Books
 
-- G. Casalicchio and **L. Burk**, "Evaluation and Benchmarking." in *Applied machine learning using mlr3 in R
-*, 1st ed., B. Bischl, R. Sonabend, L. Kotthoff, and M. Lang, Eds., CRC Press, 2024. Available: <https://mlr3book.mlr-org.com/evaluation_and_benchmarking.html>
+- G. Casalicchio and **L. Burk**, "Evaluation and Benchmarking." in *Applied machine learning using mlr3 in R*, 1st ed., B. Bischl, R. Sonabend, L. Kotthoff, and M. Lang, Eds., CRC Press, 2024. Available: <https://mlr3book.mlr-org.com/evaluation_and_benchmarking.html>
+
+- M. N. Wright, **L. Burk**, P. Golchian, J. Kapar, N. Koenen, and S. H. Langbein, "Machine Learning in Epidemiology,"" in *Handbook of Epidemiology*, Springer, New York, NY, 2024, pp. 1–68. doi: [10.1007/978-1-4614-6625-3_81-1](https://link.springer.com/rwe/10.1007/978-1-4614-6625-3_81-1).
