@@ -17,13 +17,13 @@ author:
 date: last-modified
 ---
 
-# Work Experience
-
-{{< yaml cv/work.yml >}}
-
 # Education
 
 {{< yaml cv/education.yml >}}
+
+# Work Experience
+
+{{< yaml cv/work.yml >}}
 
 # Teaching
 
