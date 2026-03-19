@@ -1,0 +1,15 @@
+edu1:
+  title: M. Sc. in Medical Biometry / Biostatistics
+  location: Bremen, Germany
+  date: "2021"
+  description: University of Bremen
+  details:
+    - "Thesis: A Comparison of Deep Learning Models for Energy Expenditure Prediction in Preschoolers"
+
+edu2:
+  title: B. A. in Public Health
+  location: Bremen, Germany
+  date: "2018"
+  description: University of Bremen
+  details:
+    - "Thesis: Detection of Concomitant Use of Medications in GePaRD"

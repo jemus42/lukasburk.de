@@ -1,7 +1,7 @@
 project:
   type: website
   render:
-    # Need to exlude cv.Rmd from quarto rendering
+    # cv.qmd is rendered separately via `quarto render cv.qmd`
     - index.qmd
     - posts.qmd
     - talks.qmd
@@ -10,8 +10,7 @@ project:
   resources:
     - favicon.ico
     - umami.html
-    - cv.html
-    - cv_files
+    - cv.pdf
     - .well-known
   preview:
     port: 4200
@@ -33,7 +32,7 @@ website:
       - href: talks.qmd
       - href: posts.qmd
     right:
-      - href: cv.html
+      - href: cv.pdf
         text: CV
   page-footer:
     left: "CC-BY 2024, Lukas Burk"

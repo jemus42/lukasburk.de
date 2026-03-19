@@ -1,0 +1,10 @@
+teaching1:
+  title: Teaching Assistant for Quantitative Methods
+  location: Bremen, Germany
+  date: 2014 - 2018
+  description: University of Bremen
+  details:
+    - Tutorials for first year undergraduates in psychology
+    - Basics of descriptive and inferential statistics
+    - Application of these contents using R & RStudio
+    - 'Yearly course "Introduction to R"'
