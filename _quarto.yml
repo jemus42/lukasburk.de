@@ -35,7 +35,7 @@ website:
       - href: cv.pdf
         text: CV
   page-footer:
-    left: "CC-BY 2024, Lukas Burk"
+    left: "CC-BY 2024 -- 2026, Lukas Burk"
     center:
       - icon: github
         aria-label: GitHub
@@ -51,7 +51,7 @@ format:
       light: [flatly, style/light.scss, style/common.scss]
       dark: [darkly, style/dark.scss, style/common.scss]
     toc: true
-    email-obfuscation: references
+    email-obfuscation: javascript
     smooth-scroll: true
     fig-align: center
     link-external-newwindow: true

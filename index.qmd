@@ -23,20 +23,6 @@ in association with the [*Munich Center for Machine Learning (MCML)*](https://mc
 [{{< bi github >}}](https://github.com/jemus42)
 :::
 
-Topics include survival analysis, benchmarking, tree-based methods, and high-dimensional data.
-
-<!---
-## Education
-
--   University of Bremen\
-    M. Sc.
-    in Medical Biometry / Biostatistics\
-    Sep 2018 -- Feb 2021
-
--   University of Bremen\
-    B. A.
-    in Public Health\
-    Sep 2014 -- Sep 2018
--->
+Topics include survival analysis, empirical benchmarking of learning algorithms, feature importance, and feature selection in high-dimensional data.
 
 :::
