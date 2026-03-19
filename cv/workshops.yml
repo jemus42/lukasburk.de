@@ -1,0 +1,17 @@
+workshop1:
+  title: Introduction to R
+  location: Bremen, Germany
+  date: 2025
+  description: BIPS / RKI CARe Program
+  details:
+    - Developed and held short course in cooperation with RKI CARe program
+    - Materials available #link("https://bips-hb.github.io/course_introduction_to_r")[on GitHub]
+
+workshop2:
+  title: Introduction to Machine Learning
+  location: Bremen, Germany
+  date: 2021, 2023, 2025
+  description: BIPS, held by Marvin N. Wright
+  details:
+    - Assisted with course as part of #link("https://www.bremen-research.de/data-train/about-data-train")[UBRA DataTrain] program
+    - Course materials available #link("https://bips-hb.github.io/datatrain_workshop_ml/")[on GitHub]

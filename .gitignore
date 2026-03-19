@@ -6,7 +6,8 @@
 /.quarto/
 /_site/
 *_files
-cv.pdf
 
 # Local Netlify folder
 .netlify
+
+**/*.quarto_ipynb

@@ -1,0 +1,33 @@
+work1:
+  title: PhD Student / Research Fellow
+  location: Bremen and Munich, Germany
+  date: Since 2021
+  description: Leibniz Institute for Prevention Research and Epidemiology - BIPS / Chair of Statistical Learning and Data Science, LMU Munich
+
+work2:
+  title: Internship -- Biometry
+  location: Bremen, Germany
+  date: 2019
+  description: Leibniz Institute for Prevention Research and Epidemiology - BIPS
+  details:
+    - Creation of a handout on the topic of count data and modeling approaches
+    - Descriptive tables for validation purposes in the context of an ongoing study
+
+work3:
+  title: Student Assistant
+  location: Bremen, Germany
+  date: 2019
+  description: Competence Center for Clinical Trials (KKSB)
+  details:
+    - Support during the analysis of study data
+    - Descriptive tables
+    - Exploratory linear regression modeling
+
+work4:
+  title: Internship -- Biometry, Epidemiology
+  location: Bremen, Germany
+  date: 2016 - 2017
+  description: Leibniz Institute for Prevention Research and Epidemiology - BIPS
+  details:
+    - Creation of an R / Shiny application for interactive data validation
+    - Data management and descriptive statistics

@@ -1,0 +1,19 @@
+teaching1:
+  title: Teaching assistant -- Programming with Statistical Software (R)
+  location: Munich, Germany
+  date: 2022 - 2023
+  description: LMU Munich
+  details:
+    - Programming course aimed at students in statistics, data science, machine learning
+    - Preparation and assessment of programming exercises
+
+teaching2:
+  title: Teaching Assistant -- Quantitative Methods
+  location: Bremen, Germany
+  date: 2014 - 2018
+  description: University of Bremen
+  details:
+    - Tutorials for first year undergraduates in psychology
+    - Basics of descriptive and inferential statistics
+    - Application of these contents using R & RStudio
+    - Yearly course "Introduction to R"
