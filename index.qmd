@@ -11,9 +11,9 @@ editor_options:
 ---
 
 ::: {#heading}
-Pursuing a PhD in statistics and machine learning since April 2021 in a position shared between 
-the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*](https://www.bips-institut.de) in Bremen 
-and the [*Chair of Statistical Learning and Data Science (SLDS)*](https://www.slds.stat.uni-muenchen.de) of LMU Munich 
+Pursuing a PhD in statistics and machine learning since April 2021 at 
+the [*Leibniz Institute for Prevention Research and Epidemiology - BIPS*](https://www.bips-institut.de) in Bremen.
+From 2021 until April 2026, the position was shared with the [*Chair of Statistical Learning and Data Science (SLDS)*](https://www.slds.stat.uni-muenchen.de) of LMU Munich 
 in association with the [*Munich Center for Machine Learning (MCML)*](https://mcml.ai/).
 
 ::: about-links
