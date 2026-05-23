@@ -8,7 +8,7 @@ cv: cv.qmd
 # Quarto's `freeze: auto` only invalidates when the .qmd source changes,
 # not external data files. Track external deps here so freezes get
 # regenerated whenever the underlying data changes.
-_freeze/talks/execute-results/html.json: talks.qmd talks.yml
+_freeze/talks/execute-results/html.json: talks.qmd talks.yml workshops.yml
 	rm -f $@
 	quarto render talks.qmd
 
