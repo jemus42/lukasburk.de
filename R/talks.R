@@ -35,10 +35,10 @@ sort_year <- function(w) {
 render_talks <- function(talks) {
   cat("## Talks\n\n")
   for (i in seq_len(nrow(talks))) {
-    cat(glue::glue_data(
-      talks[i, , drop = FALSE],
-      "- [{venue} {year}]({url})  \n",
-      "  *{title}* — [Slides]({slides})\n\n"
+    t <- talks[i, , drop = FALSE]
+    cat(sprintf(
+      "- [%s %s](%s)  \n  *%s* — [Slides](%s)\n\n",
+      t$venue, t$year, t$url, t$title, t$slides
     ))
   }
 }
