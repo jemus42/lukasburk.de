@@ -1,4 +1,4 @@
-- venue: CEN
+- venue: 6th CEN
   year: 2026
   url: https://https://cen2026.org
   title: 'Identifying Post-COVID Risk Factors\ with Model-Agnostic Feature Importance'
@@ -13,18 +13,16 @@
 - venue: Statistical Computing
   year: 2024
   url: https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024
-  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional
-    Data
+  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data
   slides: https://slides.lukasburk.de/2024/07-statcomp/survbench.pdf
 
 - venue: 70th Biometric Colloqium
   year: 2024
   url: https://www.biometrische-gesellschaft.de/termine/biometrische-kolloquien/70th-biometric-colloquium-2024-in-luebeck.html
-  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional
-    Data
+  title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data
   slides: https://slides.lukasburk.de/2024/02-biocoll/01MAR24_Lukas_Burk.pdf
 
-- venue: CEN
+- venue: 5th CEN
   year: 2023
   url: https://cen2023.github.io/home/
   title: High-Dimensional Variable Selection for Competing Risks with Cooperative Penalized Regression
