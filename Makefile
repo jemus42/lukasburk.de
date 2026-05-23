@@ -2,17 +2,19 @@
 all: cv site
 
 .PHONY: cv
-cv: cv.qmd
+cv: cv.pdf
+
+cv.pdf: cv.qmd
 	quarto render cv.qmd
 
 # Quarto's `freeze: auto` only invalidates when the .qmd source changes,
 # not external data files. Track external deps here so freezes get
 # regenerated whenever the underlying data changes.
-_freeze/talks/execute-results/html.json: talks.qmd talks.yml workshops.yml
+_freeze/talks/execute-results/html.json: talks.qmd talks.yml workshops.yml R/talks.R
 	rm -f $@
 	quarto render talks.qmd
 
-_freeze/publications/execute-results/html.json: publications.qmd references.bib
+_freeze/publications/execute-results/html.json: publications.qmd references.bib R/bib.R
 	rm -f $@
 	quarto render publications.qmd
 
