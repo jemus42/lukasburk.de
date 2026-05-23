@@ -14,6 +14,8 @@ comments: false
 
 ## Preprints
 
+- **L. Burk**, F. K. Ewald, G. Casalicchio, M. N. Wright, and B. Bischl, "xplainfi: Feature Importance and Statistical Inference for Machine Learning in R." arXiv, Mar. 16, 2026. doi: [10.48550/arXiv.2603.15306](https://arxiv.org/abs/2603.15306).
+
 - J. Piller, L. Orsini, S. Wiegrebe, J. Zobolas, **L. Burk**, S. H. Langbein, P. Studener, M. Goeswein, A. Bender, "Reduction Techniques for Survival Analysis." arXiv, Aug 07, 2025. doi: [2508.05715/arXiv.2508.05715](https://arxiv.org/abs/2508.05715)
 
 - R. Sonabend, J. Zobolas, P. Kopper, **L. Burk**, and A. Bender, "Examining properness in the external validation of survival models with squared and logarithmic losses." arXiv, Jun. 03, 2024. doi: [10.48550/arXiv.2212.05260](https://arxiv.org/abs/2212.05260).
