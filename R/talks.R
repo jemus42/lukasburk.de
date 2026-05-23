@@ -6,10 +6,9 @@ month_names <- c(
 )
 
 read_talks <- function(path = "talks.yml") {
-  talks <- yaml::read_yaml(path) |>
-    lapply(as.data.frame) |>
-    do.call(rbind, args = _)
-  talks[order(talks$year, decreasing = TRUE), , drop = FALSE]
+  talks <- yaml::read_yaml(path)
+  years <- vapply(talks, function(t) as.integer(t$year), integer(1))
+  talks[order(years, decreasing = TRUE)]
 }
 
 read_workshops <- function(path = "workshops.yml") {
@@ -34,11 +33,15 @@ sort_year <- function(w) {
 
 render_talks <- function(talks) {
   cat("## Talks\n\n")
-  for (i in seq_len(nrow(talks))) {
-    t <- talks[i, , drop = FALSE]
+  for (t in talks) {
+    venue_long <- if (!is.null(t$venue_full)) {
+      sprintf("  <span class=\"venue-full\">%s</span>  \n", t$venue_full)
+    } else {
+      ""
+    }
     cat(sprintf(
-      "- [%s %s](%s)  \n  *%s* — [Slides](%s)\n\n",
-      t$venue, t$year, t$url, t$title, t$slides
+      "- [%s %s](%s)  \n%s  *%s* — [Slides](%s)\n\n",
+      t$venue, t$year, t$url, venue_long, t$title, t$slides
     ))
   }
 }

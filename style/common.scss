@@ -66,3 +66,9 @@ $code-block-bg-alpha: -.8;
   list-style-type: none;
  }
 }
+
+// Subtitle for full venue/conference names in talks list
+.venue-full {
+  font-size: 0.9em;
+  color: var(--bs-secondary-color, $gray-600);
+}
