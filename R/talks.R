@@ -39,9 +39,14 @@ render_talks <- function(talks) {
     } else {
       ""
     }
+    location <- if (!is.null(t$location)) {
+      sprintf("  <span class=\"venue-location\">%s</span>  \n", t$location)
+    } else {
+      ""
+    }
     cat(sprintf(
-      "- [%s %s](%s)  \n%s  *%s* — [Slides](%s)\n\n",
-      t$venue, t$year, t$url, venue_long, t$title, t$slides
+      "- [%s %s](%s)  \n%s%s  *%s* — [Slides](%s)\n\n",
+      t$venue, t$year, t$url, venue_long, location, t$title, t$slides
     ))
   }
 }
@@ -69,12 +74,18 @@ render_workshops <- function(workshops) {
       desc,
       if (!is.null(w$materials)) sprintf("[Materials](%s)", w$materials)
     )
+    location <- if (!is.null(w$location)) {
+      sprintf("  <span class=\"venue-location\">%s</span>  \n", w$location)
+    } else {
+      ""
+    }
     cat(sprintf(
-      "- **%s**  \n  [%s %s](%s)  \n  %s\n\n",
+      "- **%s**  \n  [%s %s](%s)  \n%s  %s\n\n",
       w$title,
       w$venue,
       workshop_date(w),
       w$url,
+      location,
       paste(meta, collapse = ". ")
     ))
   }

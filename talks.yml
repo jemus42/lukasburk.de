@@ -4,6 +4,7 @@
 #   venue:       Short conference name (e.g. "CEN", "DAGStat")
 #   venue_full:  Optional long official name; shown as muted subtitle
 #                (e.g. "6th Central European Region Conference of the IBS")
+#   location:    Optional city (or "Online"); shown as muted subtitle
 #   year:        Required, 4-digit
 #   url:         Conference page
 #   title:       Talk title (rendered italic)
@@ -11,6 +12,7 @@
 
 - venue: CEN
   venue_full: 6th Conference of the Central European Network of the International Biometric Society
+  location: Warsaw
   year: 2026
   url: https://cen2026.org
   title: 'Identifying Post-COVID Risk Factors with Model-Agnostic Feature Importance'
@@ -18,6 +20,7 @@
 
 - venue: DAGStat
   venue_full: 7th Joint Statistical Meeting of the Deutsche Arbeitsgemeinschaft Statistik
+  location: Berlin
   year: 2025
   url: https://dagstat2025.de/
   title: 'Random Planted Forest: A Directly Interpretable Tree Ensemble'
@@ -25,6 +28,7 @@
 
 - venue: Statistical Computing ("Reisensburg")
   venue_full: Workshop of the working groups Statistical Computing (GMDS/IBS-DR) and Klassifikation und Datenanalyse in den Biowissenschaften (GfKl)
+  location: Reisensburg
   year: 2024
   url: https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2024
   title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data
@@ -32,6 +36,7 @@
 
 - venue: Biometric Colloquium
   venue_full: 70th Biometrical Colloquium of the German Region of the International Biometric Society
+  location: Lübeck
   year: 2024
   url: https://www.biometrische-gesellschaft.de/termine/biometrische-kolloquien/70th-biometric-colloquium-2024-in-luebeck.html
   title: A Large-Scale Neutral Comparison Study of Survival Models on Low-Dimensional Data
@@ -39,6 +44,7 @@
 
 - venue: CEN
   venue_full: 5th Conference of the Central European Network of the International Biometric Society
+  location: Basel
   year: 2023
   url: https://cen2023.github.io/home/
   title: High-Dimensional Variable Selection for Competing Risks with Cooperative Penalized Regression

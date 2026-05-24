@@ -1,33 +1,52 @@
 /*-- scss:defaults --*/
 
+// Typography matches light mode; font import lives in common.scss
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, "JetBrains Mono",
+  Menlo, monospace;
+$font-size-base: 1rem;
+$line-height-base: 1.65;
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+$h1-font-size: 2.4rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1.05rem;
+
+$navbar-padding-y: 0.35rem;
+$navbar-brand-font-size: 1.05rem;
+$navbar-brand-padding-y: 0.2rem;
+$nav-link-padding-y: 0.4rem;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #ecf0f1 !default;
+$gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #b4bcc2 !default;
-$gray-600: #95a5a6 !default;
-$gray-700: #7b8a8b !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
 
-$blue:    #2c3e50 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #e74c3c !default;
-$orange:  #fd7e14 !default;
-$yellow:  #f39c12 !default;
-$green:   #18bc9c !default;
-$teal:    #20c997 !default;
-$cyan:    #3498db !default;
+// Lifted palette for dark mode
+$primary:   #7BA7CC !default;  // lifted Yale Blue
+$secondary: #94a3b8 !default;
+$success:   #7BA7CC !default;
+$info:      #93c5fd !default;
+$warning:   #fbbf24 !default;
+$danger:    #f8a18a !default;  // lifted brick — still warm-toned
+$light:     #cbd5e1 !default;
+$dark:      $gray-700 !default;
 
-$primary:       #29ADB2 !default;
-$secondary:     #2A3A3F !default;
-$success:       #8EA4B2 !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         #8EA4B2 !default;
-$dark:          $gray-700 !default;
+$link-color:       #7BA7CC !default;
+$link-hover-color: #f8a18a !default;
+$link-decoration:  none !default;
+$link-hover-decoration: underline !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --accent: #f8a18a;
+}

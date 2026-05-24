@@ -5,6 +5,7 @@
 
 /.quarto/
 /_site/
+/_previews/
 *_files
 
 # Local Netlify folder

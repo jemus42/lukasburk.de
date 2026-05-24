@@ -67,8 +67,42 @@ $code-block-bg-alpha: -.8;
  }
 }
 
-// Subtitle for full venue/conference names in talks list
-.venue-full {
+// Muted subtitles for venue metadata in talks/workshops
+.venue-full,
+.venue-location {
   font-size: 0.9em;
   color: var(--bs-secondary-color, $gray-600);
+}
+
+// IBM Plex (sans + mono). Loaded once for both modes.
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+// Belt-and-suspenders navbar tightening — SCSS vars + CSS rules so flatly
+// can't undo it post-compile.
+.navbar {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  min-height: unset;
+}
+.navbar-brand {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.navbar .nav-link {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+// In publication lists, author bolding picks up the accent color
+// — so the eye finds your name in dense author strings.
+#published-articles strong,
+#preprints strong,
+#book-chapters strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+// Slight underline polish on links
+a {
+  text-underline-offset: 0.15em;
 }

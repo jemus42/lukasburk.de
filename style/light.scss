@@ -1,33 +1,58 @@
 /*-- scss:defaults --*/
 
+// Typography — IBM Plex Sans (body + headings) and IBM Plex Mono (code).
+// Font import lives in common.scss so both modes share it.
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, "JetBrains Mono",
+  Menlo, monospace;
+$font-size-base: 1rem;
+$line-height-base: 1.65;
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+$h1-font-size: 2.4rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1.05rem;
+
+// Tighter navbar — flat but not cramped
+$navbar-padding-y: 0.35rem;
+$navbar-brand-font-size: 1.05rem;
+$navbar-brand-padding-y: 0.2rem;
+$nav-link-padding-y: 0.4rem;
+
+// Grays (flatly defaults)
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #ecf0f1 !default;
+$gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #b4bcc2 !default;
-$gray-600: #95a5a6 !default;
-$gray-700: #7b8a8b !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
 
-$blue:    #2c3e50 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #e74c3c !default;
-$orange:  #fd7e14 !default;
-$yellow:  #f39c12 !default;
-$green:   #18bc9c !default;
-$teal:    #20c997 !default;
-$cyan:    #3498db !default;
+// Palette — cool Yale-Blue primary, warm brick-red accent
+$primary:   #0F4C75 !default;  // Yale Blue
+$secondary: #6b7280 !default;
+$success:   #0F4C75 !default;  // kill the turquoise — merge into primary
+$info:      #3282b8 !default;
+$warning:   #b45309 !default;
+$danger:    #9c2b13 !default;  // brick red (= --accent)
+$light:     $gray-200 !default;
+$dark:      $gray-800 !default;
 
-$primary:       #182326 !default;
-$secondary:     #2A3A3F !default;
-$success:       #29ADB2 !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-200 !default;
-$dark:          $gray-700 !default;
+$body-color: #1f2937 !default;
+$body-bg:    #ffffff !default;
+
+$link-color:       #0F4C75 !default;
+$link-hover-color: #9c2b13 !default;  // warm shift on hover
+$link-decoration:  none !default;
+$link-hover-decoration: underline !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --accent: #9c2b13;
+}

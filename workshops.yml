@@ -4,6 +4,7 @@
 #   title:       Workshop title
 #   venue:       Venue / conference name WITHOUT year (e.g. "useR!", not "useR! 2024")
 #                — the year/month is appended automatically from the fields below
+#   location:    Optional city (or "Online"); shown as muted subtitle
 #   year:        Required for single-occurrence workshops, 4-digit
 #   month:       Optional integer 1-12 — enables month-precision sort/display
 #   years:       Optional list for recurring workshops (e.g. [2021, 2023, 2025])
@@ -19,6 +20,7 @@
 
 - title: Introduction to Machine Learning for Survival Analysis with `{mlr3}`
   venue: useR!
+  location: Salzburg
   year: 2024
   month: 7
   url: https://user2024.r-project.org/
@@ -29,6 +31,7 @@
 
 - title: "Data Train: Introduction to Machine Learning"
   venue: U Bremen
+  location: Bremen
   years: [2021, 2023, 2025]
   url: https://www.bremen-research.de/data-train/
   people:
@@ -38,6 +41,7 @@
 
 - title: Introduction to R
   venue: RKI CARe
+  location: Online
   year: 2025
   month: 1
   url: https://github.com/bips-hb/course_introduction_to_r
