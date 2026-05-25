@@ -12,6 +12,7 @@ project:
     - umami.html
     - cv.pdf
     - .well-known
+    - style/fonts/
   preview:
     port: 4200
     browser: false

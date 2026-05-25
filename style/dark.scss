@@ -1,5 +1,8 @@
 /*-- scss:defaults --*/
 
+// Kill darkly's bundled Google Fonts import — see light.scss
+$web-font-path: false;
+
 // Typography matches light mode; font import lives in common.scss
 $font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
   "Segoe UI", system-ui, sans-serif;

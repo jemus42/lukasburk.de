@@ -1,5 +1,9 @@
 /*-- scss:defaults --*/
 
+// Kill flatly's bundled Google Fonts import (Lato). We use Plex anyway,
+// and the upstream @import would transfer visitor IPs to Google's CDN.
+$web-font-path: false;
+
 // Typography — IBM Plex Sans (body + headings) and IBM Plex Mono (code).
 // Font import lives in common.scss so both modes share it.
 $font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
