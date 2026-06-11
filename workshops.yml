@@ -25,7 +25,7 @@
   month: 7
   url: https://user2024.r-project.org/
   people:
-    - John Zobolas
+    - Dr. John Zobolas
   materials: https://survival-org.github.io/user2024-survival-mlr3/
   description: Half-day tutorial covering `{mlr3}` and `{mlr3proba}` fundamentals.
 
