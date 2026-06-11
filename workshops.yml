@@ -20,7 +20,7 @@
 
 - title: Introduction to Machine Learning for Survival Analysis with `{mlr3}`
   venue: useR!
-  location: Salzburg
+  location: Salzburg, Austria
   year: 2024
   month: 7
   url: https://user2024.r-project.org/
@@ -31,7 +31,7 @@
 
 - title: "Data Train: Introduction to Machine Learning"
   venue: U Bremen
-  location: Bremen
+  location: Bremen, Germany
   years: [2021, 2023, 2025]
   url: https://www.bremen-research.de/data-train/
   people:
