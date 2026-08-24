@@ -49,7 +49,9 @@ parse_bib <- function(path) {
       pos <- pos + 1L
     }
     entry_text <- substr(text, starts[i], pos - 1L)
-    hdr <- regmatches(entry_text, regexec(entry_re, entry_text, perl = TRUE))[[1]]
+    hdr <- regmatches(entry_text, regexec(entry_re, entry_text, perl = TRUE))[[
+      1
+    ]]
     type <- tolower(hdr[2])
     key <- trimws(hdr[3])
 
@@ -63,7 +65,9 @@ parse_bib <- function(path) {
       if (fm[1] == -1L) {
         break
       }
-      mm <- regmatches(rest, regexec("(\\w+)\\s*=\\s*\\{", rest, perl = TRUE))[[1]]
+      mm <- regmatches(rest, regexec("(\\w+)\\s*=\\s*\\{", rest, perl = TRUE))[[
+        1
+      ]]
       field_name <- tolower(mm[2])
       header_len <- attr(fm, "match.length")[1]
       val_start <- bp + fm[1] + header_len - 1L
@@ -154,8 +158,18 @@ parse_date <- function(s, precision = c("month", "day")) {
   month <- if (length(parts) >= 2) parts[2] else NA_character_
   day <- if (length(parts) >= 3) parts[3] else NA_character_
   month_names <- c(
-    "Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.",
-    "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."
+    "Jan.",
+    "Feb.",
+    "Mar.",
+    "Apr.",
+    "May",
+    "Jun.",
+    "Jul.",
+    "Aug.",
+    "Sep.",
+    "Oct.",
+    "Nov.",
+    "Dec."
   )
   display <- if (precision == "day" && !is.na(month) && !is.na(day)) {
     sprintf("%s %s, %s", month_names[as.integer(month)], day, year)
@@ -229,7 +243,10 @@ format_incollection <- function(e) {
     n <- as.integer(strip_braces(f$edition))
     suf <- switch(
       as.character(n %% 10),
-      "1" = "st", "2" = "nd", "3" = "rd", "th"
+      "1" = "st",
+      "2" = "nd",
+      "3" = "rd",
+      "th"
     )
     if (!is.na(n) && n %% 100 %in% 11:13) {
       suf <- "th"
@@ -253,22 +270,68 @@ format_incollection <- function(e) {
     format_authors(f$author),
     clean_text(f$title),
     clean_text(f$booktitle),
-    paste0(editors, edition, publisher, pages,
-           parse_date(f$date %||% f$year)$display),
+    paste0(
+      editors,
+      edition,
+      publisher,
+      pages,
+      parse_date(f$date %||% f$year)$display
+    ),
     format_doi(f$doi)
+  )
+}
+
+format_thesis <- function(e) {
+  f <- e$fields
+  kind <- switch(
+    tolower(clean_text(f$type %||% "phdthesis")),
+    phdthesis = "PhD dissertation",
+    mathesis = "Master's thesis",
+    "Thesis"
+  )
+  bits <- c(
+    kind,
+    clean_text(f$institution %||% f$school),
+    parse_date(f$date %||% f$year)$display
+  )
+  doi <- format_doi(f$doi)
+  url <- if (is.null(f$doi) && !is.null(f$url)) {
+    sprintf("[%s](%s)", strip_braces(f$url), strip_braces(f$url))
+  } else {
+    ""
+  }
+  link <- if (nzchar(doi)) {
+    paste0(" ", doi, ".")
+  } else if (nzchar(url)) {
+    paste0(" ", url, ".")
+  } else {
+    ""
+  }
+  sprintf(
+    '- %s, "%s", %s.%s',
+    format_authors(f$author),
+    clean_text(f$title),
+    paste(bits, collapse = ", "),
+    link
   )
 }
 
 render_bibliography <- function(path = "references.bib") {
   entries <- parse_bib(path)
-  buckets <- vapply(entries, function(e) {
-    switch(e$type,
-      article = "published",
-      online = "preprint",
-      incollection = "book",
-      "other"
-    )
-  }, character(1))
+  buckets <- vapply(
+    entries,
+    function(e) {
+      switch(
+        e$type,
+        article = "published",
+        online = "preprint",
+        incollection = "book",
+        thesis = "thesis",
+        "other"
+      )
+    },
+    character(1)
+  )
   sort_keys <- vapply(
     entries,
     function(e) parse_date(e$fields$date %||% e$fields$year)$sort,
@@ -281,10 +344,13 @@ render_bibliography <- function(path = "references.bib") {
     }
     cat("## ", heading, "\n\n", sep = "")
     ix <- ix[order(sort_keys[ix], decreasing = TRUE)]
-    for (j in ix) cat(formatter(entries[[j]]), "\n\n", sep = "")
+    for (j in ix) {
+      cat(formatter(entries[[j]]), "\n\n", sep = "")
+    }
   }
 
   emit("Published Articles", format_article, which(buckets == "published"))
   emit("Preprints", format_online, which(buckets == "preprint"))
   emit("Book Chapters", format_incollection, which(buckets == "book"))
+  emit("Dissertation", format_thesis, which(buckets == "thesis"))
 }
