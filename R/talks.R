@@ -1,8 +1,18 @@
 # Talks & workshops helpers for talks.qmd.
 
 month_names <- c(
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
 )
 
 read_talks <- function(path = "talks.yml") {
@@ -28,7 +38,11 @@ workshop_date <- function(w) {
 # Sort year: max(years) for recurring, else year. Year-only entries sort to
 # top of their year; entries with explicit month sort by that month.
 sort_year <- function(w) {
-  if (!is.null(w$years)) max(as.integer(unlist(w$years))) else as.integer(w$year)
+  if (!is.null(w$years)) {
+    max(as.integer(unlist(w$years)))
+  } else {
+    as.integer(w$year)
+  }
 }
 
 render_talks <- function(talks) {
@@ -46,7 +60,13 @@ render_talks <- function(talks) {
     }
     cat(sprintf(
       "- [%s %s](%s)  \n%s%s  *%s* — [Slides](%s)\n\n",
-      t$venue, t$year, t$url, venue_long, location, t$title, t$slides
+      t$venue,
+      t$year,
+      t$url,
+      venue_long,
+      location,
+      t$title,
+      t$slides
     ))
   }
 }
@@ -56,13 +76,17 @@ render_workshops <- function(workshops) {
     return(invisible())
   }
   cat("## Workshops\n\n")
-  sort_keys <- vapply(workshops, function(w) {
-    sprintf(
-      "%04d-%02d",
-      sort_year(w),
-      if (!is.null(w$month)) as.integer(w$month) else 12L
-    )
-  }, character(1))
+  sort_keys <- vapply(
+    workshops,
+    function(w) {
+      sprintf(
+        "%04d-%02d",
+        sort_year(w),
+        if (!is.null(w$month)) as.integer(w$month) else 12L
+      )
+    },
+    character(1)
+  )
   workshops <- workshops[order(sort_keys, decreasing = TRUE)]
 
   for (w in workshops) {
