@@ -140,7 +140,8 @@ $code-block-bg-alpha: -.8;
 // — so the eye finds your name in dense author strings.
 #published-articles strong,
 #preprints strong,
-#book-chapters strong {
+#book-chapters strong,
+#dissertation strong {
   color: var(--accent);
   font-weight: 600;
 }
