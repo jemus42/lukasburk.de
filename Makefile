@@ -4,7 +4,7 @@ all: cv site
 .PHONY: cv
 cv: cv.pdf
 
-cv.pdf: cv.qmd
+cv.pdf: cv.qmd cv/*.yml references.bib R/bib.R _extensions/kazuyanagimoto/awesomecv/*
 	quarto render cv.qmd
 
 # Quarto's `freeze: auto` only invalidates when the .qmd source changes,
