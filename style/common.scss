@@ -150,3 +150,10 @@ $code-block-bg-alpha: -.8;
 a {
   text-underline-offset: 0.15em;
 }
+
+// Quarto's solana template emits align-items:start after its mobile block, overriding the centering
+@media (max-width: 991.98px) {
+  #quarto-document-content div.quarto-about-solana .about-entity {
+    align-items: center;
+  }
+}
